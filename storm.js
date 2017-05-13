@@ -14,20 +14,6 @@ function Storm() {
         this.height = myCanvas.height();
         var self = this;
         $(document).keydown(function(event) {
-            myCanvas.on("swipeleft", function() {
-                currentCity--;
-                if (currentCity < 0) {
-                    currentCity = stats.length - 1;
-                }
-                self.show();            
-            });
-            myCanvas.on("swiperight", function() {
-                currentCity++;
-                if (currentCity >= stats.length) {
-                    currentCity = 0;
-                }
-                self.show();
-            });
             if (event.which == 37) {
                 currentCity--;
                 if (currentCity < 0) {
