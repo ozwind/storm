@@ -1,1 +1,37 @@
-Hello world
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <title>Storm</title>
+  <link rel="stylesheet" type="text/css" href="storm.css">
+  <script src="jquery-2.2.4.min.js"></script>
+  <script src="stats.js"></script>
+  <script src="storm.js"></script>
+  <script>
+    $(function() {
+        storm.init();
+        storm.show("Los Angeles");
+    });
+  </script>
+</head>
+<body>
+ <h1>City Climates</h1>
+ <canvas id="myCanvas" width="590" height="420"></canvas>
+<p><b>High / Low temperature</b> averages for each month (orange/blue lines) can range from -20 to 120 degrees fahrenheit.<br>
+<b>Precipitation</b> averages for each month (blue bars) can range from 0 to 14 inches.<br>
+<b>Elevation</b> follows the city name, measured in feet.
+
+<p><b>T-Storms</b>: average annual number of days with thunderstorms.<br>
+<b>Precip</b>: average annual inches of precipitation.<br>
+<b>Snow</b>: average annual inches of snow.<br>
+<b>Freeze days</b>: average annual number of days when temperature is 32 degrees or lower<br>
+<b>90 degree days</b>: average annual number of days when temperature is 90 degrees or higher<br>
+<b>Cloudy, Partly Cloudy, Clear</b>: average annual number of days for each
+
+<p><b>Pie chart</b>: shows Winter, Spring/Fall, Summer, in colors gray, green, yellow, for slices of the year
+<h3>Controls</h3>
+<b>Left-Arrow</b> or <b>Right-Arrow</b> to see previous or next city
+<br>
+<b>A</b> to <b>Z</b>  - select city beginning what that letter</b>
+</body>
+</html>
