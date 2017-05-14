@@ -7,6 +7,7 @@ function Storm() {
     const summer = 'yellow';
     const spring = '#00ff00';
     const winter = 'gray';
+    const cityStore = 'cityStore';
 
     this.init = function() {
         const myCanvas = $("#myCanvas");
@@ -36,6 +37,41 @@ function Storm() {
                 }
             }
         });
+        this.initPicklist();
+        var name = localStorage.getItem(cityStore);
+        if (!name) {
+            name = "Los Angeles";  // default
+        }
+        this.setCity(name);
+    }
+
+    this.initPicklist = function() {
+        var self = this;
+        var cities = $('#cities');
+
+        for (var i = 0; i < stats.length; i++) {
+            var name = stats[i].name;
+            var option = document.createElement('option');
+            option.setAttribute('value', name);
+            option.appendChild(document.createTextNode(name));
+            cities.append(option);
+        }
+
+        cities.change(function(event) {
+            self.setCity(event.target.value);
+            self.show();
+        });
+    }
+
+    this.setCity = function(name) {
+        if (name) {
+            for (var i = 0; i < stats.length; i++) {
+                if (stats[i].name.includes(name)) {
+                    currentCity = i;
+                    break;
+                }
+            }            
+        }
     }
 
     this.previous = function() {
@@ -54,14 +90,11 @@ function Storm() {
         this.show();
     }
 
-    this.show = function(name) {
-        for (var i = 0; i < stats.length; i++) {
-            if (stats[i].name.includes(name)) {
-                currentCity = i;
-                break;
-            }
-        }
+    this.show = function() {
         var city = stats[currentCity];
+        var cities = $('#cities');
+        cities.val(city.name);
+        localStorage.setItem(cityStore, city.name);
         var canvas = document.getElementById("myCanvas");
         this.ctx = canvas.getContext("2d");
         this.ctx.clearRect(0, 0, canvas.width, canvas.height);
