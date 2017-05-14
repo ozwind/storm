@@ -9,7 +9,6 @@ function Storm() {
     const winter = 'gray';
 
     this.init = function() {
-        var isChrome = navigator.userAgent.toLowerCase().search("chrome") > -1;
         const myCanvas = $("#myCanvas");
         this.width = myCanvas.width();
         this.height = myCanvas.height();
