@@ -9,24 +9,23 @@ function Storm() {
     const winter = 'gray';
 
     this.init = function() {
+        var isChrome = navigator.userAgent.toLowerCase().search("chrome") > -1;
         const myCanvas = $("#myCanvas");
         this.width = myCanvas.width();
         this.height = myCanvas.height();
         var self = this;
+        $("#previous").click(function() {
+            self.previous();
+        });
+        $("#next").click(function() {
+            self.next();
+        });
         $(document).keydown(function(event) {
             if (event.which == 37) {
-                currentCity--;
-                if (currentCity < 0) {
-                    currentCity = stats.length - 1;
-                }
-                self.show();
+                self.previous();
             }
             else if (event.which == 39) {
-                currentCity++;
-                if (currentCity >= stats.length) {
-                    currentCity = 0;
-                }
-                self.show();
+                self.next();
             }
             else {
                 for (var i = 0; i < stats.length; i++) {
@@ -38,6 +37,22 @@ function Storm() {
                 }
             }
         });
+    }
+
+    this.previous = function() {
+        currentCity--;
+        if (currentCity < 0) {
+            currentCity = stats.length - 1;
+        }
+        this.show();                    
+    }
+
+    this.next = function() {
+        currentCity++;
+        if (currentCity >= stats.length) {
+            currentCity = 0;
+        }
+        this.show();
     }
 
     this.show = function(name) {
