@@ -10,7 +10,7 @@
   <script>
     $(function() {
         storm.init();
-        storm.show("Los Angeles");
+        storm.show();
     });
   </script>
 </head>
@@ -18,10 +18,12 @@
  <h1>City Climates</h1>
  <canvas id="myCanvas" width="590" height="420"></canvas>
  <div class="controls">
-  <button id="previous" class="arrows" type="button">&lt;</button>
-  <button id="next" class="arrows" type="button">&gt;</button>
+  <button id="previous" class="bigfont" type="button">&lt;</button>
+  <select id="cities" class="bigfont">
+  </select> 
+  <button id="next" class="bigfont" type="button">&gt;</button>
  </div>
-
+     
 <p><b>High / Low temperature</b> averages for each month (orange/blue lines) can range from -20 to 120 degrees fahrenheit.<br>
 <b>Precipitation</b> averages for each month (blue bars) can range from 0 to 14 inches.<br>
 <b>Elevation</b> follows the city name, measured in feet.
