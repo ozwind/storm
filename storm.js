@@ -21,18 +21,20 @@ function Storm() {
             self.next();
         });
         $(document).keydown(function(event) {
-            if (event.which == 37) {
-                self.previous();
-            }
-            else if (event.which == 39) {
-                self.next();
-            }
-            else {
-                for (var i = 0; i < stats.length; i++) {
-                    if (stats[i].name.charCodeAt(0) == event.which) {
-                        currentCity = i;
-                        self.show();
-                        break;
+            if (document.activeElement != $('#cities')[0]) {
+                if (event.which == 37) {
+                    self.previous();
+                }
+                else if (event.which == 39) {
+                    self.next();
+                }
+                else {
+                    for (var i = 0; i < stats.length; i++) {
+                        if (stats[i].name.charCodeAt(0) == event.which) {
+                            currentCity = i;
+                            self.show();
+                            break;
+                        }
                     }
                 }
             }
