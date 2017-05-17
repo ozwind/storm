@@ -14,9 +14,7 @@ h1 {
 }
 
 #cities {
-    width: 85%;
-    margin-left: 1px;
-    padding-bottom: 2px;
+    width: 510px;
 }
 
 .controls {
@@ -24,8 +22,14 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     width: 590px;
+    display: flex;
+}
+
+#previous {
+    width: 48px;
 }
 
 #next {
+    width: 48px;
     float: right;
 }
