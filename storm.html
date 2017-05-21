@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>Storm</title>
+    <link rel="stylesheet" type="text/css" href="storm.css">
+    <script src="jquery-2.2.4.min.js"></script>
+    <script src="stats.js"></script>
+    <script src="storm.js"></script>
+    <script>
+        $(function() {
+            storm.init();
+            storm.show();
+        });
+
+    </script>
+</head>
+
+<body>
+    <h1>City Climates</h1>
+    <canvas id="myCanvas" width="590" height="420"></canvas>
+    <div class="controls">
+        <button id="previous" class="bigfont" type="button">&lt;</button>
+        <select id="cities" class="bigfont"></select>
+        <button id="next" class="bigfont" type="button">&gt;</button>
+    </div>
+
+    <p><b>High / Low temperature</b> averages for each month (orange/blue lines) can range from -20 to 120 degrees fahrenheit.<br>
+        <b>Precipitation</b> averages for each month (blue bars) can range from 0 to 14 inches.<br>
+        <b>Elevation</b> follows the city name, measured in feet.</p>
+
+    <p><b>T-Storms</b>: average annual number of days with thunderstorms.<br>
+        <b>Precip</b>: average annual inches of precipitation.<br>
+        <b>Snow</b>: average annual inches of snow.<br>
+        <b>Freeze days</b>: average annual number of days when temperature is 32 degrees or lower<br>
+        <b>90 degree days</b>: average annual number of days when temperature is 90 degrees or higher<br>
+        <b>Cloudy, Partly Cloudy, Clear</b>: average annual number of days for each</p>
+
+    <p><b>Pie chart</b>: shows Winter, Spring/Fall, Summer, in colors gray, green, yellow, where Winter is when the average daily low temperature is below 32, and Summer is when the average daily mean temperature is above 60</p>
+    <small>C. Hewitt, 19-May-2017</small>
+</body>
+
+</html>

@@ -8,6 +8,10 @@ function Storm() {
     const spring = '#00ff00';
     const winter = 'gray';
     const cityStore = 'cityStore';
+    const imgX = 2;
+    const imgY = 2;
+    const imgWidth = 130;
+    const imgHeight = 90;
 
     this.init = function() {
         const myCanvas = $("#myCanvas");
@@ -40,11 +44,41 @@ function Storm() {
             }
         });
         this.initPicklist();
+        this.initMouseListeners();
         var name = localStorage.getItem(cityStore);
         if (!name) {
             name = "Los Angeles";  // default
         }
         this.setCity(name);
+    }
+
+    this.initMouseListeners = function() {
+        var self = this;
+
+        myCanvas.addEventListener("mousemove", function(event) {
+            if (stats[currentCity].img) {
+                var ex = event.offsetX;
+                var ey = event.offsetY;
+                if (ex > imgX && ey > imgY && ex < (imgX + imgWidth) && ey < (imgY + imgHeight)) {
+                    document.body.style.cursor = "pointer";
+                    self.inLink = true;
+                }
+                else {
+                    document.body.style.cursor = "";
+                    self.inLink = false;
+                }
+            }
+            else {
+                self.inLink = false;
+            }
+        });
+
+        myCanvas.addEventListener("click", function(event) {
+            if (self.inLink) {
+                console.log("click");
+                window.location = stats[currentCity].img;
+            }
+        });
     }
 
     this.initPicklist = function() {
@@ -104,6 +138,26 @@ function Storm() {
         this.ctx.font = "14px Verdana";
         this.ctx.fillStyle = 'black';
         this.ctx.fillText(city.name + " (" + city.elev + "')", chartX + 5, chartY - 16);
+        this.displayImage(city);
+    }
+
+    this.displayImage = function(city) {
+        if (city.img) {
+            var self = this;
+            var img = new Image;
+            img.onload = function() {
+                var sx = imgWidth / img.width;
+                var sy = imgHeight / img.height;
+                var scale = Math.min(sx, sy);
+                var width = img.width * scale;
+                var height = img.height * scale;
+                var x = imgX + (imgWidth - width) / 2;
+                var y = imgY + (imgHeight - height) / 2;
+                self.ctx.drawImage(img, x, y, width, height);
+//                self.ctx.drawImage(img, imgX, imgY, imgWidth, imgHeight);
+            };
+            img.src = city.img;
+        }        
     }
 
     this.chart = function(city) {
