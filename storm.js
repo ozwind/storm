@@ -111,6 +111,10 @@ function Storm() {
     }
 
     this.previous = function() {
+        if (this.loading) {
+            return;
+        }
+        this.loading = true;
         currentCity--;
         if (currentCity < 0) {
             currentCity = stats.length - 1;
@@ -119,6 +123,10 @@ function Storm() {
     }
 
     this.next = function() {
+        if (this.loading) {
+            return;
+        }
+        this.loading = true;
         currentCity++;
         if (currentCity >= stats.length) {
             currentCity = 0;
@@ -154,10 +162,16 @@ function Storm() {
                 var x = imgX + (imgWidth - width) / 2;
                 var y = imgY + (imgHeight - height) / 2;
                 self.ctx.drawImage(img, x, y, width, height);
-//                self.ctx.drawImage(img, imgX, imgY, imgWidth, imgHeight);
+                self.loading = false;
+            };
+            img.onerror = function() {
+                self.loading = false;
             };
             img.src = city.img;
-        }        
+        }
+        else {
+            this.loading = false;
+        }
     }
 
     this.chart = function(city) {
@@ -350,7 +364,7 @@ function Storm() {
         }
 
         // Round precip to hundredths:
-        precip = Math.floor((precip + .005) * 100) / 100;
+        precip = (Math.floor((precip + .005) * 100) / 100).toFixed(2);
 
         var base = this.height - 35;
         this.drawBar("T-Storms", "red", 20, base, city.tstorms);
