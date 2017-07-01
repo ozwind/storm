@@ -13,12 +13,18 @@
             storm.init();
             storm.show();
         });
+
     </script>
 </head>
 
 <body>
     <h1>City Climates</h1>
-    <canvas id="myCanvas" width="590" height="420"></canvas>
+    <div>
+        <canvas id="myCanvas" width="590" height="420"></canvas>
+        <div class="image">
+            <img id="imgCity">
+        </div>
+    </div>
     <div class="controls">
         <button id="previous" class="bigfont" type="button">&lt;</button>
         <select id="cities" class="bigfont"></select>
@@ -37,7 +43,7 @@
         <b>Cloudy, Partly Cloudy, Clear</b>: average annual number of days for each</p>
 
     <p><b>Pie chart</b>: shows Winter, Spring/Fall, Summer, in colors gray, green, yellow, where Winter is when the average daily low temperature is below 32, and Summer is when the average daily mean temperature is above 60</p>
-    <small>C. Hewitt, 19-May-2017</small>
+    <small>C. Hewitt, 1-Jul-2017</small>
 </body>
 
 </html>
