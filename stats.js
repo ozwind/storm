@@ -303,7 +303,8 @@ var stats = [
     ptCloudy : 106,
     clear : 99,
     winter : [11,21, 3,21],
-    summer : [5,10, 9,28]
+    summer : [5,10, 9,28],
+    img : 'https://worldstrides.com/wp-content/uploads/2015/07/Untitled-3_0000_Layer-11-1030x580.jpg'
   },
   { name : 'Brownsville, TX',
     elev : 20,
@@ -333,7 +334,8 @@ var stats = [
     ptCloudy : 115,
     clear : 124,
     winter : [5,1, 5,1],
-    summer : [10,20, 5,1]
+    summer : [10,20, 5,1],
+    img : 'http://www.airpano.ru/files/Buenos-Aires-1/images/image1.jpg'
   },
   { name : 'Buffalo, NY',
     elev : 706,
@@ -578,7 +580,8 @@ var stats = [
     ptCloudy : 95,
     clear : 138,
     winter : [1,1, 1,20],
-    summer : [4,1, 11,10]
+    summer : [4,1, 11,10],
+    img : 'https://s-media-cache-ak0.pinimg.com/originals/fc/ea/17/fcea1756e15e15dcc8071b945e1aaaad.jpg'
   },
   { name : 'Denver, CO',
     elev : 5332,
@@ -593,7 +596,8 @@ var stats = [
     ptCloudy : 131,
     clear : 115,
     winter : [10,25, 4,15],
-    summer : [5,20, 9,25]
+    summer : [5,20, 9,25],
+    img : 'https://res.cloudinary.com/simpleview/image/upload/c_fill,f_auto,h_645,q_50,w_1024/v1/clients/denver/Denver_Skyline_Credit_VISIT_DENVER_1cd25b3e-3335-49a2-86da-b37ed01326c0.jpg'
   },
   { name : 'Des Moines, IA',
     elev : 963,
@@ -699,7 +703,8 @@ var stats = [
     ptCloudy : 112,
     clear : 87,
     winter : [10,20, 4,10],
-    summer : [5,25, 9,5]
+    summer : [5,25, 9,5],
+    img : 'https://s-media-cache-ak0.pinimg.com/originals/6f/a6/04/6fa6040c87bf247b78cb79054c739a88.jpg'
   },
   { name : 'Flagstaff, AZ',
     elev : 7018,
@@ -900,7 +905,8 @@ var stats = [
     ptCloudy : 109,
     clear : 94,
     winter : [11,15, 11,15],
-    summer : [3,15, 11,15]
+    summer : [3,15, 11,15],
+    img : 'https://s-media-cache-ak0.pinimg.com/736x/aa/c5/b9/aac5b93979671d74d940df9a3ab60780--houston-rodeo-dallas-texas.jpg'
   },
   { name : 'Indianapolis, IN',
     elev : 808,
@@ -930,7 +936,8 @@ var stats = [
     ptCloudy : 103,
     clear : 81,
     winter : [10,15, 5,1],
-    summer : [6,20, 8,25]
+    summer : [6,20, 8,25],
+    img : 'http://www.lakesnwoods.com/images/LNWa%20131.jpg'
   },
   { name : 'Istanbul, Turkey',
     elev : 121,
@@ -945,7 +952,8 @@ var stats = [
     ptCloudy : 134,
     clear : 150,
     winter : [5,15, 5,15],
-    summer : [5,15, 10,20]
+    summer : [5,15, 10,20],
+    img : 'http://www.acibademinternational.com/wp-content/uploads/2014/06/istanbul-4.jpg'
   },
   { name : 'Jackson, MS',
     elev : 331,
@@ -990,7 +998,8 @@ var stats = [
     ptCloudy : -1,
     clear : -1,
     winter : [1,1, 1,1],
-    summer : [1,1, 12,31]
+    summer : [1,1, 12,31],
+    img : 'http://www.airpano.ru/files/Jakarta-Indonesia/images/image1.jpg'
   },
   { name : 'Jerusalem, Israel',
     elev : 2490,
@@ -1005,7 +1014,8 @@ var stats = [
     ptCloudy : -1,
     clear : -1,
     winter : [11,15, 11,15],
-    summer : [3,1, 11,15]
+    summer : [3,1, 11,15],
+    img : 'https://lonelyplanetimages.imgix.net/mastheads/15970771.jpg?sharp=10&vib=20&w=1200'
   },
   { name : 'Johannesburg, South Africa',
     elev : 5576,
@@ -1020,7 +1030,8 @@ var stats = [
     ptCloudy : 128,
     clear : 193,
     winter : [5,5, 5,5],
-    summer : [9,20, 5,5]
+    summer : [9,20, 5,5],
+    img : 'http://i.huffpost.com/gadgets/slideshows/402566/slide_402566_4994572_free.jpg'
   },
   { name : 'Juneau, AK',
     elev : 24,
@@ -1113,7 +1124,8 @@ var stats = [
     ptCloudy : 31,
     clear : 41,
     winter : [1,1, 1,1],
-    summer : [1,1, 12,31]
+    summer : [1,1, 12,31],
+    img : 'https://www.airpano.com/files/Lima-Peru/images/image6.jpg'
   },
   { name : 'Lincoln, NE',
     elev : 1189,
@@ -1235,7 +1247,8 @@ var stats = [
     ptCloudy : 163,
     clear : 26,
     winter : [1,1, 1,1],
-    summer : [1,1, 12,31]
+    summer : [1,1, 12,31],
+    img : 'http://s1.ibtimes.com/sites/www.ibtimes.com/files/styles/lg/public/2017/02/10/metro-manila.jpg'
   },
   { name : 'Melbourne, Australia',
     elev : 565,
@@ -1280,7 +1293,8 @@ var stats = [
     ptCloudy : 202,
     clear : 68,
     winter : [10,15, 10,15],
-    summer : [3,15, 10,15]
+    summer : [3,15, 10,15],
+    img : 'https://www.ctsu.ox.ac.uk/images/research/mexico-city-prospective-study/responsive_image?ratio=image&scale=w760'
   },
   { name : 'Miami, FL',
     elev : 12,
@@ -1295,7 +1309,8 @@ var stats = [
     ptCloudy : 172,
     clear : 76,
     winter : [1,1, 1,1],
-    summer : [1,1, 12,31]
+    summer : [1,1, 12,31],
+    img : 'https://cjastudy.fd.org/sites/default/files/public-hearings/public-hearing-miami-florida/Miami-Public-Hearing.jpg'
   },
   { name : 'Milwaukeee, WI',
     elev : 693,
@@ -1401,7 +1416,8 @@ var stats = [
     ptCloudy : 107,
     clear : 103,
     winter : [12,20, 2,20],
-    summer : [4,15, 10,20]
+    summer : [4,15, 10,20],
+    img : 'https://a.travel-assets.com/findyours-php/viewfinder/images/res30/24000/24742-Grand-Ole-Opry.jpg'
   },
   { name : 'New Orleans, LA',
     elev : 30,
@@ -1416,7 +1432,8 @@ var stats = [
     ptCloudy : 120,
     clear : 109,
     winter : [11,15, 11,15],
-    summer : [3,15, 11,15]
+    summer : [3,15, 11,15],
+    img : 'https://static1.squarespace.com/static/58a7c55ed482e974646e32cd/58b449c5e6f2e1db5d152d2d/58b449fc414fb5caa4f26316/1490398265994/new+orleans.jpg?format=1500w'
   },
   { name : 'New York, NY',
     elev : 87,
@@ -1462,7 +1479,8 @@ var stats = [
     ptCloudy : 96,
     clear : 141,
     winter : [11,28, 2,5],
-    summer : [4,15, 10,15]
+    summer : [4,15, 10,15],
+    img : 'http://www.strangedangers.com/images/content/189076.jpg'
   },
   { name : 'Omaha, NE',
     elev : 982,
@@ -1586,7 +1604,8 @@ var stats = [
     ptCloudy : 68,
     clear : 69,
     winter : [1,1, 1,20],
-    summer : [6,10, 9,25]
+    summer : [6,10, 9,25],
+    img : 'https://www.ytravelblog.com/wp-content/uploads/2014/09/shutterstock_139578104.jpg'
   },
   { name : 'Quito, Ecuador',
     elev : 9350,
@@ -1601,7 +1620,8 @@ var stats = [
     ptCloudy : -1,
     clear : -1,
     winter : [-1,-1, -1,-1],
-    summer : [1,1, 1,1]
+    summer : [1,1, 1,1],
+    img : 'http://www.tuagencia24.com/images/Quito-Webformat.jpg'
   },
   { name : 'Raleigh, NC',
     elev : 441,
@@ -1647,7 +1667,8 @@ var stats = [
     ptCloudy : 172,
     clear : 9,
     winter : [11,20, 4,10],
-    summer : [4,10, 4,10]
+    summer : [4,10, 4,10],
+    img : 'http://www.travelzoo.com/blog/wp-content/uploads/2015/09/tzoo.hd_.10109.0.328043.reykjavik_icelandshutterstock.jpg'
   },
   { name : 'Richmond, VA',
     elev : 177,
@@ -1693,7 +1714,8 @@ var stats = [
     ptCloudy : 55,
     clear : 297,
     winter : [2,10, 2,10],
-    summer : [2,10, 12,15]
+    summer : [2,10, 12,15],
+    img : 'http://www.benkhan.com/images/articles/Riyadh-The-Dead-Center-of-the-Saudi-Arabia-Kingdom1[1].jpg'
   },
   { name : 'Roanoke, VA',
     elev : 1176,
