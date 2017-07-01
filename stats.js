@@ -715,7 +715,7 @@ var stats = [
     clear : 170,
     winter : [10,15, 5,14],
     summer : [6,15, 9,2],
-    img : 'https://img.clipartfest.com/243d25d407a9176aae8edd9f68bcead3_i-heart-az-exploring-arizona-flagstaff-arizona_680-360.jpeg'
+    img : 'http://www.flagstaffdarkskies.org/WPdev/wp-content/uploads/2013/02/IMG_5836-2.jpg'
   },
   { name : 'Fort Smith, AR',
     elev : 463,

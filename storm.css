@@ -1,5 +1,6 @@
 #myCanvas {
-    display: block;
+    display: table;
+    float: left;
     margin-left: auto;
     margin-right: auto;
     border: 1px solid #c3c3c3;
@@ -7,6 +8,7 @@
 
 h1 {
     text-align: center;
+    width: 590px;
 }
 
 .bigfont {
@@ -18,10 +20,8 @@ h1 {
 }
 
 .controls {
-    margin-top: 2px;
-    margin-left: auto;
     margin-right: auto;
-    width: 590px;
+    width: 592px;
     display: flex;
 }
 
@@ -32,4 +32,14 @@ h1 {
 #next {
     width: 48px;
     float: right;
+}
+
+.image {
+    overflow: hidden;
+    position: relative;
+}
+
+.image > img {
+    height: 422px;
+    padding-left: 5px;
 }

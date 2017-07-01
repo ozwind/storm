@@ -111,10 +111,6 @@ function Storm() {
     }
 
     this.previous = function() {
-        if (this.loading) {
-            return;
-        }
-        this.loading = true;
         currentCity--;
         if (currentCity < 0) {
             currentCity = stats.length - 1;
@@ -123,10 +119,6 @@ function Storm() {
     }
 
     this.next = function() {
-        if (this.loading) {
-            return;
-        }
-        this.loading = true;
         currentCity++;
         if (currentCity >= stats.length) {
             currentCity = 0;
@@ -151,26 +143,10 @@ function Storm() {
 
     this.displayImage = function(city) {
         if (city.img) {
-            var self = this;
-            var img = new Image;
-            img.onload = function() {
-                var sx = imgWidth / img.width;
-                var sy = imgHeight / img.height;
-                var scale = Math.min(sx, sy);
-                var width = img.width * scale;
-                var height = img.height * scale;
-                var x = imgX + (imgWidth - width) / 2;
-                var y = imgY + (imgHeight - height) / 2;
-                self.ctx.drawImage(img, x, y, width, height);
-                self.loading = false;
-            };
-            img.onerror = function() {
-                self.loading = false;
-            };
-            img.src = city.img;
+            $('#imgCity').attr('src', city.img);
         }
         else {
-            this.loading = false;
+            $('#imgCity').attr('src', "1x1.png");
         }
     }
 
