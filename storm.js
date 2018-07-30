@@ -4,6 +4,8 @@ function Storm() {
     var currentCity = 0;
     const chartX = 165;
     const chartY = 50;
+    const chartWidth = 324;
+    const chartHeight = 210;
     const summer = 'yellow';
     const spring = '#00ff00';
     const winter = 'gray';
@@ -12,6 +14,7 @@ function Storm() {
     const imgY = 2;
     const imgWidth = 130;
     const imgHeight = 90;
+    const months = [ 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
     this.init = function() {
         const myCanvas = $("#myCanvas");
@@ -44,7 +47,7 @@ function Storm() {
             }
         });
         this.initPicklist();
-        this.initMouseListeners();
+        this.initLayer();
         var name = localStorage.getItem(cityStore);
         if (!name) {
             name = "Los Angeles";  // default
@@ -52,33 +55,50 @@ function Storm() {
         this.setCity(name);
     }
 
-    this.initMouseListeners = function() {
+    this.initLayer = function() {
         var self = this;
+        var layer = $("#myLayer");
 
-        myCanvas.addEventListener("mousemove", function(event) {
-            if (stats[currentCity].img) {
-                var ex = event.offsetX;
-                var ey = event.offsetY;
-                if (ex > imgX && ey > imgY && ex < (imgX + imgWidth) && ey < (imgY + imgHeight)) {
-                    document.body.style.cursor = "pointer";
-                    self.inLink = true;
-                }
-                else {
-                    document.body.style.cursor = "";
-                    self.inLink = false;
-                }
-            }
-            else {
-                self.inLink = false;
-            }
+        layer.mousemove(function(event) {
+            self.layerMove(layer, event);
         });
 
-        myCanvas.addEventListener("click", function(event) {
-            if (self.inLink) {
-                console.log("click");
-                window.location = stats[currentCity].img;
-            }
+        layer.mouseout(function(event) {
+            layer[0].getContext("2d").clearRect(0, 0, layer.width(), layer.height());
         });
+    }
+
+    this.layerMove = function(layer, event) {
+        var x = event.offsetX;
+        var y = event.offsetY;
+        var ctx = layer[0].getContext("2d");
+        var city = stats[currentCity];
+        ctx.clearRect(0, 0, layer.width(), layer.height());
+
+        if (x > chartX && x < (chartX + chartWidth) && y > chartY && y < (chartY + chartHeight)) {
+            var monthWidth = chartWidth / city.precip.length;
+            var month = Math.floor((x - chartX - 5) / monthWidth);
+            month = month < 0 ? 0 : month;
+            var precip = (Math.floor((city.precip[month] + .005) * 100) / 100).toFixed(2);
+            var xPos = 20;
+            var yPos = chartY - 15;
+            ctx.font = "bold 14px Verdana";
+            ctx.fillStyle = 'black';
+            ctx.fillText(months[month], xPos, yPos);
+            ctx.font = "14px Verdana";
+            yPos += 20;
+            ctx.fillText(city.high[month] + "° / " + city.low[month] + "°", xPos, yPos);
+            yPos += 20;
+            ctx.fillText(precip + '" precip', xPos, yPos);
+
+            ctx.lineWidth = 3.0;
+            ctx.strokeStyle = 'indianred';
+            ctx.beginPath();
+            x = chartX + monthWidth * month + (monthWidth / 2);
+            ctx.moveTo(x, chartY);
+            ctx.lineTo(x, chartY + chartHeight);
+            ctx.stroke();
+        }
     }
 
     this.initPicklist = function() {
@@ -151,8 +171,6 @@ function Storm() {
     }
 
     this.chart = function(city) {
-        var chartWidth = 324;
-        var chartHeight = 210;
         var chartLines = 7;
         var segHeight = chartHeight / chartLines;
         var monthWidth = chartWidth / city.precip.length;
@@ -188,7 +206,6 @@ function Storm() {
         }
 
         // Month labels
-        var months = [ 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
         x = chartX + 4;
         y = chartY + chartHeight + 16;
         for (var i = 0; i < months.length; i++) {

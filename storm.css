@@ -6,6 +6,16 @@
     border: 1px solid #c3c3c3;
 }
 
+#myLayer {
+    position: absolute;
+    left: 0;
+    border: 1px solid #c3c3c3;
+}
+
+#myChart {
+    position: relative;
+}
+
 h1 {
     text-align: center;
     width: 590px;
