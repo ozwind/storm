@@ -308,11 +308,11 @@ function Storm() {
 
         // Precip labels
         this.ctx.font = "12px Verdana";
-        var x = chartX - 4;
+        var x = chartX - 8;
         var y = chartY + 4;
         for (var inches = 14; inches >= 0; inches -= 2) {
             var width = this.ctx.measureText(inches).width;
-            this.ctx.fillText(inches, x - width, y);
+            this.ctx.fillText(inches + '"', x - width, y);
             y += segHeight;
         }
 
@@ -321,7 +321,7 @@ function Storm() {
         y = chartY + 4;
         for (var temp = 120; temp >= -20; temp -= 20) {
             var width = this.ctx.measureText(temp).width;
-            this.ctx.fillText(temp, x - width, y);
+            this.ctx.fillText(temp + "°", x - width, y);
             y += segHeight;
         }
 
