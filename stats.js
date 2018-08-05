@@ -213,7 +213,8 @@ var stats = [
     clear : 151,
     winter : [11,15, 3,10],
     summer : [4,20, 10,5],
-    img : 'https://media1.britannica.com/eb-media/54/122154-120-52D686FF.jpg'
+    img : 'https://photos.smugmug.com/Vacation/China-2005/i-9gbdWBj/0/4e4896fe/X2/130-3023_IMG-X2.jpg',
+    url : 'https://chewi0.smugmug.com/Vacation/China-2005/i-9gbdWBj'
   },
   { name : 'Berlin, Germany',
     elev : 157,
@@ -1972,7 +1973,8 @@ var stats = [
     clear : 84,
     winter : [1,5, 1,15],
     summer : [4,10, 10,20],
-    img : 'https://www.azamaraclubcruises.com/sites/default/files/heros/shanghai-china.jpg'
+    img : 'https://photos.smugmug.com/Vacation/China-2005/i-DvfWknQ/0/5a064da7/X2/130-3069_IMG-X2.jpg',
+    url : 'https://chewi0.smugmug.com/Vacation/China-2005/i-DvfWknQ'
   },
   { name : 'Shreveport, LA',
     elev : 259,
