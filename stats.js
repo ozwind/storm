@@ -412,7 +412,8 @@ var stats = [
     clear : 101,
     winter : [-1,1, -1,1],
     summer : [4,1, 11,1],
-    img : 'https://photos.smugmug.com/Charleston-2017/i-fWwRncm/0/e8a14dc9/L/IMG_3479-L.jpg'
+    img : 'https://photos.smugmug.com/Charleston-2017/i-fWwRncm/0/e8a14dc9/L/IMG_3479-L.jpg',
+    url : 'https://chewi0.smugmug.com/Charleston-2017/i-fWwRncm'
   },
   { name : 'Charleston, WV',
     elev : 951,
@@ -505,7 +506,8 @@ var stats = [
     clear : 130,
     winter : [10,20, 4,20],
     summer : [7,1, 9,5],
-    img : 'https://cdn-co.milespartnership.com/sites/default/master/files/styles/media-player-large/public/ColoradoSprings_Airforce.jpg'
+    img : 'https://photos.smugmug.com/Nature/Colorado-2014/i-5V5CZk6/0/634a858b/XL/IMG_1010-XL.jpg',
+    url : 'https://chewi0.smugmug.com/Nature/Colorado-2014/i-5V5CZk6'
   },
   { name : 'Columbia, SC',
     elev : 225,
@@ -827,7 +829,8 @@ var stats = [
     clear : -1,
     winter : [-1,-1, -1,-1],
     summer : [1,1, 12,31],
-    img : 'https://photos.smugmug.com/Nature/Galapagos-2015/i-4B6WtzC/0/52ed95f8/L/002%20GYE-L.jpg'
+    img : 'https://photos.smugmug.com/Nature/Galapagos-2015/i-4B6WtzC/0/52ed95f8/L/002%20GYE-L.jpg',
+    url : 'https://chewi0.smugmug.com/Nature/Galapagos-2015/i-4B6WtzC'
   },
   { name : 'Hartford, CT',
     elev : 179,
@@ -874,7 +877,8 @@ var stats = [
     clear : -1,
     winter : [1,15, 1,15],
     summer : [2,15, 1,15],
-    img : 'http://assets.fodors.com/destinations/54468/boat-harbor-hong-kong-china-1_main.jpg'
+    img : 'https://photos.smugmug.com/Vacation/China-2018/i-QKtNVqd/0/e8ddf093/X3/IMG_5355-X3.jpg',
+    url : 'https://chewi0.smugmug.com/Vacation/China-2018/i-QKtNVqd'
   },
   { name : 'Honolulu, HI',
     elev : 15,
@@ -1401,7 +1405,7 @@ var stats = [
     clear : -1,
     winter : [10,20, 4,15],
     summer : [6,25, 8,20],
-    img : 'http://cdn.pymnts.com/wp-content/uploads/2016/11/moscow-russia-tech-center.jpg'
+    img : 'https://ftnnews.com/images/stories/cities/russia/moscow-redsquare-iconic.jpg'
   },
   { name : 'Nashville, TN',
     elev : 605,
@@ -1480,7 +1484,7 @@ var stats = [
     clear : 141,
     winter : [11,28, 2,5],
     summer : [4,15, 10,15],
-    img : 'http://www.strangedangers.com/images/content/189076.jpg'
+    img : 'https://d1pk12b7bb81je.cloudfront.net/images/photos/slideshows/generated/1920/1481845520_1481845515-okcbycooperrossslideshow.jpg'
   },
   { name : 'Omaha, NE',
     elev : 982,
@@ -1543,7 +1547,7 @@ var stats = [
     clear : 92,
     winter : [12,1, 3,20],
     summer : [5,3, 10,1],
-    img : 'http://assets.historyhole.com/wp-content/uploads/2016/07/05011159/Liberty-Bell-Center-23465_nqf4gd.jpg'
+    img : 'http://www.monaco-philadelphia.com/images/1700-960/philadelphia-independence-hall-58ffe36e.jpg'
   },
   { name : 'Phoenix, AZ',
     elev : 1107,
@@ -1621,7 +1625,7 @@ var stats = [
     clear : -1,
     winter : [-1,-1, -1,-1],
     summer : [1,1, 1,1],
-    img : 'http://www.tuagencia24.com/images/Quito-Webformat.jpg'
+    img : 'https://img.budgettravel.com/_contentHero/cotopaxi-volcano-looms-over-quito-ecuador-1222013-0285_original.jpeg?mtime=20140903194507'
   },
   { name : 'Raleigh, NC',
     elev : 441,
@@ -1668,7 +1672,7 @@ var stats = [
     clear : 9,
     winter : [11,20, 4,10],
     summer : [4,10, 4,10],
-    img : 'http://www.travelzoo.com/blog/wp-content/uploads/2015/09/tzoo.hd_.10109.0.328043.reykjavik_icelandshutterstock.jpg'
+    img : 'https://www.discover.is/wp-content/uploads/reykjavik-iceland-1000x500.jpg'
   },
   { name : 'Richmond, VA',
     elev : 177,
@@ -1809,7 +1813,8 @@ var stats = [
     clear : 105,
     winter : [11,15, 3,15],
     summer : [5,1, 10,15],
-    img : 'https://ib2news.files.wordpress.com/2015/07/st-louis-skyline.jpg'
+    img : 'https://photos.smugmug.com/St-Louis-2017/i-rsHSWKD/0/f4405b7f/X3/IMG_3853-X3.jpg',
+    url : 'https://chewi0.smugmug.com/St-Louis-2017/i-rsHSWKD'
   },
   { name : 'Salt Lake City, UT',
     elev : 4227,
@@ -1919,7 +1924,8 @@ var stats = [
     clear : 104,
     winter : [11,10, 11,10],
     summer : [3,20, 11,10],
-    img : 'https://photos.smugmug.com/Charleston-2017/i-mVQdGLH/0/d2eec2c9/X3/IMG_3421-X3.jpg'
+    img : 'https://photos.smugmug.com/Charleston-2017/i-mVQdGLH/0/d2eec2c9/X3/IMG_3421-X3.jpg',
+    url : 'https://chewi0.smugmug.com/Charleston-2017/i-mVQdGLH'
   },
   { name : 'Seattle, WA',
     elev : 450,
@@ -1997,7 +2003,7 @@ var stats = [
     clear : 0,
     winter : [1,1, 1,1],
     summer : [1,1, 12,31],
-    img : 'http://www.fourseasons.com/content/dam/fourseasons_magazine/SIN/marina-bay-sunset-singapore-1000x563.jpg/jcr:content/renditions/original'
+    img : 'https://www.secretflying.com/wp-content/uploads/2015/11/singapore-1.jpg'
   },
   { name : 'Sioux City, IA',
     elev : 1103,
@@ -2073,7 +2079,8 @@ var stats = [
     clear : 95,
     winter : [5,5, 5,5],
     summer : [10,5, 5,5],
-    img : 'https://photos.smugmug.com/Vacation/Sydney-2008/i-S8qZ9MF/0/6bb9c918/X2/IMG_2362-X2.jpg'
+    img : 'https://photos.smugmug.com/Vacation/Sydney-2008/i-S8qZ9MF/0/6bb9c918/X2/IMG_2362-X2.jpg',
+    url : 'https://chewi0.smugmug.com/Vacation/Sydney-2008/i-S8qZ9MF'
   },
   { name : 'Syracuse, NY',
     elev : 408,
@@ -2104,7 +2111,8 @@ var stats = [
     clear : 13,
     winter : [1,1, 1,1],
     summer : [1,1, 12,31],
-    img : 'http://www.tourist-destinations.com/wp-content/uploads/2011/08/taipei-tw.jpg'
+    img : 'https://photos.smugmug.com/Vacation/Taiwan-2018/i-swgvVW3/0/36d28eba/X3/IMG_4921-X3.jpg',
+    url : 'https://chewi0.smugmug.com/Vacation/Taiwan-2018/i-swgvVW3'
   },
   { name : 'Tallahassee, FL',
     elev : 68,
@@ -2150,7 +2158,8 @@ var stats = [
     clear : -1,
     winter : [12,20, 3,10],
     summer : [5,5, 10,20],
-    img : 'https://photos.smugmug.com/Vacation/Japan-2006/i-pBzG8Tc/0/d34b002b/X2/20060827_04-X2.jpg'
+    img : 'https://photos.smugmug.com/Vacation/Japan-2006/i-pBzG8Tc/0/d34b002b/X2/20060827_04-X2.jpg',
+    url : 'https://chewi0.smugmug.com/Vacation/Japan-2006/i-pBzG8Tc'
   },
   { name : 'Toronto, Canada',
     elev : 567,
@@ -2227,7 +2236,7 @@ var stats = [
     clear : 101,
     winter : [12,1, 2,20],
     summer : [4,10, 10,8],
-    img : 'http://www.wcsr.com/~/media/Images/WCSR/Offices/WashingtonDC.jpg'
+    img : 'https://www.tripsavvy.com/thmb/UZLifskCaDbu3eTUEeVS5tlCtaM=/870x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/capitol-building-170402241-58ddb7bf5f9b58468374c174.jpg'
   },
   { name : 'Witchita, KS',
     elev : 1340,

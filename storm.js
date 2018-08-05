@@ -18,6 +18,7 @@ function Storm() {
 
     this.init = function() {
         const myCanvas = $("#myCanvas");
+        this.layer = $("#myLayer");
         this.width = myCanvas.width();
         this.height = myCanvas.height();
         var self = this;
@@ -44,6 +45,7 @@ function Storm() {
                         }
                     }
                 }
+                self.layerMove();
             }
         });
         this.initPicklist();
@@ -52,28 +54,52 @@ function Storm() {
         if (!name) {
             name = "Los Angeles";  // default
         }
+
+        var imgCity = $('#imgCity');
+        imgCity.error(function(evt) {
+            console.error("Unable to load " + evt.currentTarget.src);
+            imgCity.attr('src', "1x1.png");
+        });
+
         this.setCity(name);
+
+        this.preload();
+    }
+
+    this.preload = function() {
+        images = [];
+        for (var idx in stats) {
+            var city = stats[idx];
+            if (city.img) {
+                images.push(city.img);
+            }
+        }
+
+        $(images).each(function(){
+            $('<img/>')[0].src = this;
+        });
     }
 
     this.initLayer = function() {
         var self = this;
-        var layer = $("#myLayer");
 
-        layer.mousemove(function(event) {
-            self.layerMove(layer, event);
+        this.layer.mousemove(function(event) {
+            self.mousex = event.offsetX;
+            self.mousey = event.offsetY;
+            self.layerMove();
         });
 
-        layer.mouseout(function(event) {
-            layer[0].getContext("2d").clearRect(0, 0, layer.width(), layer.height());
+        this.layer.mouseout(function(event) {
+            self.layer[0].getContext("2d").clearRect(0, 0, self.layer.width(), self.layer.height());
         });
     }
 
-    this.layerMove = function(layer, event) {
-        var x = event.offsetX;
-        var y = event.offsetY;
-        var ctx = layer[0].getContext("2d");
+    this.layerMove = function() {
+        var x = this.mousex;
+        var y = this.mousey;
+        var ctx = this.layer[0].getContext("2d");
         var city = stats[currentCity];
-        ctx.clearRect(0, 0, layer.width(), layer.height());
+        ctx.clearRect(0, 0, this.layer.width(), this.layer.height());
 
         if (x > chartX && x < (chartX + chartWidth) && y > chartY && y < (chartY + chartHeight)) {
             var monthWidth = chartWidth / city.precip.length;
@@ -162,11 +188,22 @@ function Storm() {
     }
 
     this.displayImage = function(city) {
+        var imgCity = $('#imgCity');
         if (city.img) {
-            $('#imgCity').attr('src', city.img);
+            imgCity.attr('src', city.img);
         }
         else {
-            $('#imgCity').attr('src', "1x1.png");
+            imgCity.attr('src', "1x1.png");
+        }
+
+        var imgUrl = $('#imgUrl');
+        if (city.url) {
+            imgUrl.attr('href', city.url);
+            imgUrl.css('pointer-events', 'auto');
+        }
+        else {
+            imgUrl.attr('href', '');
+            imgUrl.css('pointer-events', 'none');
         }
     }
 
