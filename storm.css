@@ -12,6 +12,23 @@
     border: 1px solid #c3c3c3;
 }
 
+.tooltip {
+    visibility: hidden;
+    position: absolute;
+    left 0;
+}
+
+.tooltiptext {
+    position: relative;
+    background-color: black;
+    color: #f0f0e0;
+    opacity: 0.8;
+    border-radius: 6px;
+    padding: 5px;
+    left: 5px;
+    top: 284px;
+}
+
 #myChart {
     position: relative;
 }

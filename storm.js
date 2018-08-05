@@ -14,6 +14,16 @@ function Storm() {
     const imgY = 2;
     const imgWidth = 130;
     const imgHeight = 90;
+    const barWidth = 22;
+    const tstormX = 20;
+    const precipX = 70;
+    const snowX = 120;
+    const seasonX = chartX + 155;
+    const seasonWidth = 70;
+    const seasonHeight = 20;
+    const winterY = chartY + chartHeight + 50;
+    const springY = winterY + 30;
+    const summerY = springY + 30;
     const months = [ 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
     this.init = function() {
@@ -90,7 +100,10 @@ function Storm() {
         });
 
         this.layer.mouseout(function(event) {
+            self.mousex = 0;
+            self.mousey = 0;
             self.layer[0].getContext("2d").clearRect(0, 0, self.layer.width(), self.layer.height());
+            $('.tooltip').css('visibility', 'hidden');
         });
     }
 
@@ -125,7 +138,77 @@ function Storm() {
             ctx.lineTo(x, chartY + chartHeight);
             ctx.stroke();
         }
+        else {
+            var show = false;
+            var html = "";
+
+            if (y > winterY) {
+                if (x > tstormX && x < (tstormX + barWidth)) {
+                    html = "Average annual number of days with thunderstorms";
+                    show = true;
+                }
+                else if (x > precipX && x < (precipX + barWidth)) {
+                    html = "Average annual inches of precipitation";
+                    show = true;
+                }
+                else if (x > snowX && x < (snowX + barWidth)) {
+                    html = "Average annual inches of snow";
+                    show = true;
+                }
+                else if (x > chartX && x < seasonX) {
+                    show = true;                        
+                    if (y < winterY + 20) {
+                        html = "Average annual number of days when temperature is 32 degrees or lower";
+                    }
+                    else if (y < winterY + 40) {
+                        html = "Average annual number of days when temperature is 90 degrees or higher";
+                    }
+                    else if (y < winterY + 60) {
+                        html = "Average annual number of cloudy days";
+                    }
+                    else if (y < winterY + 80) {
+                        html = "Average annual number of partly cloudy days";
+                    }
+                    else if (y < winterY + 100) {
+                        html = "Average annual number of clear days";
+                    }
+                    else {
+                        show = false;
+                    }
+                }
+                else if (x > seasonX && x < (seasonX + seasonWidth)) {
+                    if (y < (winterY + seasonHeight)) {
+                        html = "Average daily low temperature is below 32&deg;"
+                        show = true;
+                    }
+                    else if (y > springY && y < (springY + seasonHeight)) {
+                        html = "Daily low temperature is above 32&deg and daily mean below 60&deg;";
+                        show = true;
+                    }
+                    else if (y > summerY && y < (summerY + seasonHeight)) {
+                        html = "Average daily mean temperature is above 60&deg;";
+                        show = true;
+                    }
+                }
+                else if (x > (seasonX + seasonWidth) && x < (seasonX + seasonWidth + 140)) {
+                    html = this.getSeason("Winter", city.winter) + this.getSeason("Summer", city.summer);
+                    show = true;
+                }
+            }
+
+            $('.tooltip').css('visibility', show ? "visible" : "hidden");
+            $('.tooltiptext').html(html);
+        }
     }
+
+    this.getSeason = function(name, season) {
+        if (season && season.length == 4 && season[0] > 0) {
+            if (!(season[0] == season[2] && season[1] == season[3])) {
+                return name + ": " + season[0] + "/" + season[1] + " - " + season[2] + "/" + season[3] + "  ";
+            }
+        }
+        return "";
+    },
 
     this.initPicklist = function() {
         var self = this;
@@ -334,20 +417,17 @@ function Storm() {
         this.ctx.fillText(months[9], x - radius - 25, y + 4);
 
         // Season legend
-        x = chartX + 155;
-        y = chartY + chartHeight + 50;
+        x = seasonX;
         this.ctx.font = "11px Verdana";
-        this.drawSeasonLegend("Winter", winter, x, y);
-        y += 30;
-        this.drawSeasonLegend("Spring/Fall", spring, x, y);
-        y += 30;
-        this.drawSeasonLegend("Summer", summer, x, y);
+        this.drawSeasonLegend("Winter", winter, x, winterY);
+        this.drawSeasonLegend("Spring/Fall", spring, x, springY);
+        this.drawSeasonLegend("Summer", summer, x, summerY);
 
         // T-Storm Precip Snow
         this.tps(city);
 
         // Table
-        x = 170;
+        x = chartX + 5;
         y = chartY + chartHeight + 60;
         this.ctx.font = "12px Verdana";
         this.ctx.fillStyle = 'black';
@@ -363,13 +443,11 @@ function Storm() {
     }
 
     this.drawSeasonLegend = function(name, color, x, y) {
-        var width = 70;
-        var height = 20;
         this.ctx.fillStyle = color;
-        this.ctx.fillRect(x, y, width, height);
+        this.ctx.fillRect(x, y, seasonWidth, seasonHeight);
         this.ctx.lineWidth = 1;
         this.ctx.strokeStyle = 'black';
-        this.ctx.rect(x, y, width, height);
+        this.ctx.rect(x, y, seasonWidth, seasonHeight);
         this.ctx.stroke();
         this.ctx.fillStyle = color == winter ? 'white' : 'black';
         this.ctx.fillText(name,  x + 5, y + 14);        
@@ -397,23 +475,22 @@ function Storm() {
         precip = (Math.floor((precip + .005) * 100) / 100).toFixed(2);
 
         var base = this.height - 35;
-        this.drawBar("T-Storms", "red", 20, base, city.tstorms);
-        this.drawBar("Precip", "blue", 70, base, precip);
-        this.drawBar("Snow", "gray", 120, base, city.snow);
+        this.drawBar("T-Storms", "red", tstormX, base, city.tstorms);
+        this.drawBar("Precip", "blue", precipX, base, precip);
+        this.drawBar("Snow", "gray", snowX, base, city.snow);
     }
 
     this.drawBar = function(name, color, x, y, height) {
-        var width = 22;
-        var centerX = x + width / 2;
+        var centerX = x + barWidth / 2;
         var value = height >= 0 ? height : "N/A";
         height = height >= 0 ? height : 0;
 
         if (height > 0) {
             this.ctx.fillStyle = color;
-            this.ctx.fillRect(x, y - height, width, height);
+            this.ctx.fillRect(x, y - height, barWidth, height);
             this.ctx.lineWidth = 1;
             this.ctx.strokeStyle = 'black';
-            this.ctx.rect(x, y - height, width, height);
+            this.ctx.rect(x, y - height, barWidth, height);
             this.ctx.stroke();
         }
 
