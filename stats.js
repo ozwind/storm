@@ -136,7 +136,7 @@ var stats = [
     clear : 115,
     winter : [11,15, 11,15],
     summer : [3,10, 11,15],
-    img : 'http://www.austinwebpage.com/austin-mural.png'
+    img : 'https://i1.wp.com/electrek.co/wp-content/uploads/sites/3/2021/07/Tesla-Gigafactory-Texas-July-2021.jpg?w=2500&quality=82&strip=all&ssl=1'
   },
   { name : 'Baghdad, Iraq',
     elev : 112,
