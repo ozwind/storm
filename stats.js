@@ -44,7 +44,7 @@ var stats = [
     clear : 64,
     winter : [10,1, 5,15],
     summer : [7,1, 8,1],
-    img : 'http://www.saveur.com/sites/saveur.com/files/styles/large_1x_/public/sav100-anchorage-alaska-flickr-1100x825.jpg?itok=v7GMSOG1'
+    img : 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/10/2d/b6/anchorage.jpg?w=1200&h=-1&s=1'
   },
   { name : 'Asheville, NC',
     elev : 2207,
@@ -336,7 +336,7 @@ var stats = [
     clear : 124,
     winter : [5,1, 5,1],
     summer : [10,20, 5,1],
-    img : 'http://www.airpano.ru/files/Buenos-Aires-1/images/image1.jpg'
+    img : 'https://www.travelprofessionalnews.com/wp-content/uploads/2020/01/Heres-Why-Summer-in-Buenos-Aires-is-a-Must.jpg'
   },
   { name : 'Buffalo, NY',
     elev : 706,
@@ -691,7 +691,7 @@ var stats = [
     clear : 68,
     winter : [9,15, 5,16],
     summer : [6,10, 7,15],
-    img : 'https://uaf.edu/deanofstudents/CAM-12-3670-2.jpg'
+    img : 'https://cdn.theculturetrip.com/images/56-270101-fairbanks-alask.jpg'
   },
   { name : 'Fargo, ND',
     elev : 899,
@@ -723,7 +723,7 @@ var stats = [
     clear : 170,
     winter : [10,15, 5,14],
     summer : [6,15, 9,2],
-    img : 'http://www.flagstaffdarkskies.org/WPdev/wp-content/uploads/2013/02/IMG_5836-2.jpg'
+    img : 'https://www.tripsavvy.com/thmb/RjdnAvDGhvd-ra4avyU5X9fYCNg=/950x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/mount-humphreys-at-sunset-overlooks-the-area-around-flagstaff-arizona-1182550808-f665bf36812e488da2af3ce47a8520f3.jpg'
   },
   { name : 'Fort Smith, AR',
     elev : 463,
@@ -879,7 +879,7 @@ var stats = [
     clear : 76,
     winter : [1,1, 1,1],
     summer : [1,1, 12,31],
-    img : 'http://www.sandiegomagazine.com/images/cache/cache_d/cache_f/cache_7/el-capitolio-havana-cuba-4a7287fd.jpeg?ver=1471974289&aspectratio=1.4971428571429'
+    img : 'https://cdn-aokhp.nitrocdn.com/jKFJbmjLyzwpPtWKXrjTqmeJOWXIlQZX/assets/static/optimized/rev-57fb021/wp-content/uploads/havana-things-to-do-guide-900x596.jpg.webp'
   },
   { name : 'Hong Kong',
     elev : 79,
@@ -975,7 +975,7 @@ var stats = [
     clear : 150,
     winter : [5,15, 5,15],
     summer : [5,15, 10,20],
-    img : 'http://www.acibademinternational.com/wp-content/uploads/2014/06/istanbul-4.jpg'
+    img : 'https://cdn.travelpulse.com/images/65aaedf4-a957-df11-b491-006073e71405/c8f899f1-a4af-4ea3-b5dd-447ebbaeb40e/630x355.jpg'
   },
   { name : 'Jackson, MS',
     elev : 331,
@@ -1021,7 +1021,7 @@ var stats = [
     clear : -1,
     winter : [1,1, 1,1],
     summer : [1,1, 12,31],
-    img : 'http://www.airpano.ru/files/Jakarta-Indonesia/images/image1.jpg'
+    img : 'https://cdn.britannica.com/88/132688-050-E9739DD9/Skyline-Jakarta-Indonesia.jpg'
   },
   { name : 'Jerusalem, Israel',
     elev : 2490,
@@ -1147,7 +1147,7 @@ var stats = [
     clear : 41,
     winter : [1,1, 1,1],
     summer : [1,1, 12,31],
-    img : 'https://www.airpano.com/files/Lima-Peru/images/image6.jpg'
+    img : 'https://luxurylaunches.com/wp-content/uploads/2016/10/lima-peru-1170x677.jpg'
   },
   { name : 'Lincoln, NE',
     elev : 1189,
@@ -1471,7 +1471,7 @@ var stats = [
     clear : 107,
     winter : [11,25, 3,15],
     summer : [5,6, 10,20],
-    img : 'http://www.housingwire.com/ext/resources/images/editorial/A-New-Big-Images/states/New-York-City.jpg?1453402066'
+    img : 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Lower_Manhattan_skyline_-_June_2017.jpg/1200px-Lower_Manhattan_skyline_-_June_2017.jpg'
   },
   { name : 'Norfolk, VA',
     elev : 30,
@@ -1549,7 +1549,7 @@ var stats = [
     clear : 63,
     winter : [1,5, 1,20],
     summer : [6,15, 9,20],
-    img : 'https://i.ytimg.com/vi/_FYKIhJZdaI/maxresdefault.jpg'
+    img : 'https://www.rts-travel.com/wp-content/uploads/st_uploadfont/paris-1.jpg'
   },
   { name : 'Philadelphia, PA',
     elev : 28,
@@ -1690,7 +1690,7 @@ var stats = [
     clear : 9,
     winter : [11,20, 4,10],
     summer : [4,10, 4,10],
-    img : 'https://www.discover.is/wp-content/uploads/reykjavik-iceland-1000x500.jpg'
+    img : 'https://cdn.britannica.com/71/73371-050-9DFAEC1E/Reykjavik-Iceland.jpg'
   },
   { name : 'Richmond, VA',
     elev : 177,
@@ -1848,7 +1848,7 @@ var stats = [
     clear : 129,
     winter : [11,1, 4,1],
     summer : [5,15, 9,20],
-    img : 'https://efy.byu.edu/sites/efy.ce.byu.edu/files/salt-lake-city-se.jpg'
+    img : 'https://www.geographicguide.com/united-states/utah/images/salt-lake-city-ut.jpg'
   },
   { name : 'San Antonio, TX',
     elev : 794,
@@ -1896,7 +1896,7 @@ var stats = [
     clear : 162,
     winter : [10,20, 10,20],
     summer : [6,15, 10,20],
-    img : 'http://cdn.wonderfulengineering.com/wp-content/uploads/2015/05/San-Francisco-Wallpaper-25.jpg'
+    img : 'https://i.natgeofe.com/n/6b9b1439-2fe5-4b14-8285-aa805c379088/san-francisco-travel_16x9.jpg'
   },
   { name : 'San Jose, Costa Rica',
     elev : 3021,
@@ -1959,7 +1959,7 @@ var stats = [
     clear : 57,
     winter : [1,4, 1,21],
     summer : [6,15, 9,15],
-    img : 'http://media-3.web.britannica.com/eb-media/73/65573-004-DD1683BE.jpg'
+    img : 'https://www.azamara.com/sites/default/files/heros/seattle-washington-1800x1000.jpg'
   },
   { name : 'Seoul, South Korea',
     elev : 59,
