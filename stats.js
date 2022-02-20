@@ -136,7 +136,7 @@ var stats = [
     clear : 115,
     winter : [11,15, 11,15],
     summer : [3,10, 11,15],
-    img : 'https://i1.wp.com/electrek.co/wp-content/uploads/sites/3/2021/07/Tesla-Gigafactory-Texas-July-2021.jpg?w=2500&quality=82&strip=all&ssl=1'
+    img : 'https://cdn.motor1.com/images/mgl/W81gQg/s4/tesla-giga-texas-exterior-tesla-q4-2021-report.webp'
   },
   { name : 'Baghdad, Iraq',
     elev : 112,
@@ -879,7 +879,7 @@ var stats = [
     clear : 76,
     winter : [1,1, 1,1],
     summer : [1,1, 12,31],
-    img : 'https://cdn-aokhp.nitrocdn.com/jKFJbmjLyzwpPtWKXrjTqmeJOWXIlQZX/assets/static/optimized/rev-57fb021/wp-content/uploads/havana-things-to-do-guide-900x596.jpg.webp'
+    img : 'https://expertvagabond.com/wp-content/uploads/havana-things-to-do-guide.jpg'
   },
   { name : 'Hong Kong',
     elev : 79,
@@ -1864,7 +1864,7 @@ var stats = [
     clear : 110,
     winter : [11,20, 11,20],
     summer : [3,20, 11,20],
-    img : 'https://media1.britannica.com/eb-media/85/78385-004-4D20E900.jpg'
+    img : 'https://traveler.marriott.com/wp-content/uploads/2019/10/GI_592652556_HauntedAlamo.jpg'
   },
   { name : 'San Diego, CA',
     elev : 28,
