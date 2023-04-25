@@ -255,19 +255,46 @@ function Storm() {
         this.show();
     }
 
+    this.numberWithCommas = function(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
+    
     this.show = function() {
         var city = stats[currentCity];
         var cities = $('#cities');
         cities.val(city.name);
         localStorage.setItem(cityStore, city.name);
         var canvas = document.getElementById("myCanvas");
+        var pop = city.pop ? " pop.: " + this.numberWithCommas(city.pop) : "";
         this.ctx = canvas.getContext("2d");
         this.ctx.clearRect(0, 0, canvas.width, canvas.height);
         this.chart(city);
         this.ctx.font = "14px Verdana";
         this.ctx.fillStyle = 'black';
-        this.ctx.fillText(city.name + " (" + city.elev + "')", chartX + 5, chartY - 16);
+        this.ctx.fillText(city.name + " (" + city.elev + "')" + pop, chartX + 5, chartY - 26);
+        
+        var txt = (currentCity + 1) + "/" + stats.length;
+        var width = this.ctx.measureText(txt).width;
+        this.ctx.fillText(txt, this.layer.width() - width - 10, this.layer.height() - 20);
         this.displayImage(city);
+
+        var info = city.info ? city.info : "";
+        $('#info').text(info);
+
+        var map = $('#mapUrl');
+        var wiki = $('#wikiUrl');
+        if (info) {
+            map.css('display','block');
+            map.attr('href', 'https://www.google.com/maps/place/' + city.name.replaceAll(' ','+'));
+            wiki.css('display','block');
+            wiki.attr('href', 'https://en.wikipedia.org/wiki/' + city.name.replaceAll(' ','_'));
+        }
+        else {
+            map.css('display','none');
+            map.attr('href', '');
+            wiki.css('display','none');
+            wiki.attr('href', '');
+        }
     }
 
     this.displayImage = function(city) {
@@ -337,7 +364,7 @@ function Storm() {
         // 12 precips
         x = chartX + 4;
         y = chartY + chartHeight;
-        this.ctx.fillStyle = 'blue';
+        this.ctx.fillStyle = '#0000ff90';
         for (var i = 0; i < months.length; i++) {
             var precip = city.precip[i] * 15;
             this.ctx.fillRect(x, y - precip, 20, precip);
@@ -475,8 +502,8 @@ function Storm() {
         precip = (Math.floor((precip + .005) * 100) / 100).toFixed(2);
 
         var base = this.height - 35;
-        this.drawBar("T-Storms", "red", tstormX, base, city.tstorms);
-        this.drawBar("Precip", "blue", precipX, base, precip);
+        this.drawBar("T-Storms", "#ff0000c0", tstormX, base, city.tstorms);
+        this.drawBar("Precip", "#0000ff90", precipX, base, precip);
         this.drawBar("Snow", "gray", snowX, base, city.snow);
     }
 

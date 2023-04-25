@@ -18,27 +18,33 @@
 </head>
 
 <body>
-    <h1>City Climates</h1>
     <div>
         <div id="myChart">
             <canvas id="myCanvas" width="590" height="420"></canvas>
             <canvas id="myLayer" width="590" height="420"></canvas>
             <div class="tooltip"><span class="tooltiptext">Tooltip</span></div>
         </div>
-        <div class="image">
-            <a id="imgUrl">
-                <img id="imgCity">
-            </a>
+        <div class="controls">
+            <button id="previous" class="bigfont" type="button">&lt;</button>
+            <select id="cities" class="bigfont"></select>
+            <button id="next" class="bigfont" type="button">&gt;</button>
+        </div>
+        <div class="copyright">
+            <small>&copy;&nbsp;Cliff Hewitt.  1-Jul-2017, 25-Apr-2023</small>
         </div>
     </div>
-    <div class="controls">
-        <button id="previous" class="bigfont" type="button">&lt;</button>
-        <select id="cities" class="bigfont"></select>
-        <button id="next" class="bigfont" type="button">&gt;</button>
-    </div>
 
-    <br>
-    <small>&copy;&nbsp;Cliff Hewitt.  1-Jul-2017, 20-Feb-2022</small>
+    <div class="image">
+        <a id="imgUrl">
+            <img id="imgCity">
+        </a>
+        <p id='info'></p>
+        <div id="links">
+            <a id="wikiUrl">Wiki</a>
+            <a id="mapUrl">Map</a>
+        </div>
+    </div>
+    
 </body>
 
 </html>
