@@ -264,6 +264,7 @@ function Storm() {
         var cities = $('#cities');
         cities.val(city.name);
         localStorage.setItem(cityStore, city.name);
+        document.title = city.name;
         var canvas = document.getElementById("myCanvas");
         var pop = city.pop ? " pop.: " + this.numberWithCommas(city.pop) : "";
         this.ctx = canvas.getContext("2d");
