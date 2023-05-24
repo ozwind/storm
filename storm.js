@@ -71,6 +71,12 @@ function Storm() {
             imgCity.attr('src', "1x1.png");
         });
 
+        $('#links a').click(function(event) {
+            event.preventDefault(); // Prevent default link behavior
+            var url = $(this).attr('href');
+            window.open(url, '_blank');
+        });
+
         this.setCity(name);
 
         this.preload();
