@@ -78,22 +78,6 @@ function Storm() {
         });
 
         this.setCity(name);
-
-        this.preload();
-    }
-
-    this.preload = function() {
-        images = [];
-        for (var idx in stats) {
-            var city = stats[idx];
-            if (city.img) {
-                images.push(city.img);
-            }
-        }
-
-        $(images).each(function(){
-            $('<img/>')[0].src = this;
-        });
     }
 
     this.initLayer = function() {
