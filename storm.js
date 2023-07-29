@@ -65,12 +65,6 @@ function Storm() {
             name = "Los Angeles";  // default
         }
 
-        var imgCity = $('#imgCity');
-        imgCity.error(function(evt) {
-            console.error("Unable to load " + evt.currentTarget.src);
-            imgCity.attr('src', "1x1.png");
-        });
-
         $('#links a').click(function(event) {
             event.preventDefault(); // Prevent default link behavior
             var url = $(this).attr('href');

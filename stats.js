@@ -1389,8 +1389,8 @@ var stats = [
     clear : 216,
     winter : [1,1, 2,1],
     summer : [4,10, 11,1],
-    img : 'https://photos.smugmug.com/photos/i-TkQ3qGQ/0/X4/i-TkQ3qGQ-X4.jpg',
-    url : 'https://naturesouvenirs.smugmug.com/Photo-by-Location/United-States/Nevada/Las-Vegas/i-TkQ3qGQ/A',
+    img : 'https://photos.smugmug.com/photos/i-n8zLj5j/0/X4/i-n8zLj5j-X4.jpg',
+    url : 'https://www.nicksimages.com/America/USA-Nevada/i-n8zLj5j',
     info : 'A tolerance for numerous forms of adult entertainment earned it the title of "Sin City". The iconic "Welcome to Las Vegas" sign was created in 1959 by Betty Willis. There is abundant sunshine throughout the year, with bright sunshine during 86% of all daylight hours.'
   },
   { name : 'Lima, Peru',
