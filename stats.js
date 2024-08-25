@@ -1484,7 +1484,7 @@ var stats = [
     clear : 143,
     winter : [11,22, 11,22],
     summer : [5,15, 11,22],
-    img : 'https://photos.smugmug.com/photos/i-CJJxQz4/0/X4/i-CJJxQz4-X4.jpg',
+    img : 'https://photos.smugmug.com/Flugzeuge-Geflogen-Faces-Airport-Art/ART-AIRPORTBILDER/i-v4NSCzX/0/NPK7KwRPh5bDgVDsXnzjXWT46Pr4gCFJx8fk9w928/X4/TOWER-LAX-AIRPORT-X4.jpg',
     url : 'https://www.nicksimages.com/Popular-Cityscapes/i-CJJxQz4',
     info : 'The city was founded on September 4, 1781, under Spanish governor Felipe de Neve. It became a part of Mexico in 1821 following the Mexican War of Independence. Los Angeles hosted the 1932 and 1984 Summer Olympics and will host the 2028 Summer Olympics.'
   },
