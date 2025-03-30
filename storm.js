@@ -58,7 +58,7 @@ function Storm() {
             self.click(event);
         });
 
-        this.selectCity(name);
+        this.selectCity(name, true);  // true = initial start
     }
 
     this.openUrl = function(url) {
@@ -72,7 +72,7 @@ function Storm() {
 
     this.keydown = function(event) {
         const $highlight = $("." + HIGHLIGHT);
-        let index = $highlight[0].rowIndex;
+        let index = $highlight.length > 0 ? $highlight[0].rowIndex : 0;
 
         if ("ArrowDown" === event.key) {
             index++;
@@ -271,17 +271,17 @@ function Storm() {
         });
     }
 
-    this.selectCity = function(name) {
+    this.selectCity = function(name, start) {
         const index = stats.findIndex(stat => stat.name.startsWith(name));
         const $rows = $("tr");
         const $row = $($rows[index]);
-        this.hover($row);
+        this.hover($row, start);
         currentCity = index;
         this.show();
     }
 
-    this.hover = function($tar) {
-        if (document.hasFocus()) {
+    this.hover = function($tar, start) {
+        if (document.hasFocus() || start) {
             const index = $tar[0].rowIndex;
 
             $("." + HIGHLIGHT).removeClass(HIGHLIGHT);
