@@ -12,7 +12,6 @@
     <script>
         $(function() {
             storm.init();
-            storm.show();
         });
 
     </script>
@@ -25,13 +24,9 @@
             <canvas id="myLayer" width="590" height="420"></canvas>
             <div class="tooltip"><span class="tooltiptext">Tooltip</span></div>
         </div>
-        <div class="controls">
-            <button id="previous" class="bigfont" type="button">&lt;</button>
-            <select id="cities" class="bigfont"></select>
-            <button id="next" class="bigfont" type="button">&gt;</button>
-        </div>
+        <div id="cityList"></div>
         <div class="copyright">
-            <small>&copy;&nbsp;Cliff Hewitt.  1-Jul-2017, 26-Apr-2023</small>
+            <small>&copy;&nbsp;Cliff Hewitt.  1-Jul-2017, 29-Mar-2025</small>
         </div>
     </div>
 
@@ -45,7 +40,8 @@
             <a id="mapUrl">Map</a>
         </div>
     </div>
-    
+
+    <input type="text" id="focusHelper">
 </body>
 
 </html>

@@ -2,6 +2,7 @@ var storm = storm || new Storm();
 
 function Storm() {
     var currentCity = 0;
+    const HIGHLIGHT = 'highlight';
     const chartX = 165;
     const chartY = 50;
     const chartWidth = 324;
@@ -10,6 +11,8 @@ function Storm() {
     const spring = '#00ff00';
     const winter = 'gray';
     const cityStore = 'cityStore';
+    const CITYSCROLL = '#cityScroll';
+    const WIKIURL = '#wikiUrl';
     const imgX = 2;
     const imgY = 2;
     const imgWidth = 130;
@@ -28,39 +31,15 @@ function Storm() {
 
     this.init = function() {
         const myCanvas = $("#myCanvas");
+        const $doc = $(document);
+        const self = this;
         this.layer = $("#myLayer");
         this.width = myCanvas.width();
         this.height = myCanvas.height();
-        var self = this;
-        $("#previous").click(function() {
-            self.previous();
-        });
-        $("#next").click(function() {
-            self.next();
-        });
-        $(document).keydown(function(event) {
-            if (document.activeElement != $('#cities')[0]) {
-                if (event.which == 37) {
-                    self.previous();
-                }
-                else if (event.which == 39) {
-                    self.next();
-                }
-                else {
-                    for (var i = 0; i < stats.length; i++) {
-                        if (stats[i].name.charCodeAt(0) == event.which) {
-                            currentCity = i;
-                            self.show();
-                            break;
-                        }
-                    }
-                }
-                self.layerMove();
-            }
-        });
-        this.initPicklist();
+        this.initCityList();
         this.initLayer();
         var name = localStorage.getItem(cityStore);
+
         if (!name) {
             name = "Los Angeles";  // default
         }
@@ -68,10 +47,87 @@ function Storm() {
         $('#links a').click(function(event) {
             event.preventDefault(); // Prevent default link behavior
             var url = $(this).attr('href');
-            window.open(url, '_blank');
+            self.openUrl(url);
         });
 
-        this.setCity(name);
+        $doc.keydown(event => {
+            self.keydown(event);
+        });
+
+        $doc.click(event => {
+            self.click(event);
+        });
+
+        this.selectCity(name);
+    }
+
+    this.openUrl = function(url) {
+        window.open(url, '_blank');
+    }
+
+    this.openWiki = function() {
+        const url = $(WIKIURL).attr("href");
+        this.openUrl(url);
+    }
+
+    this.keydown = function(event) {
+        const $highlight = $("." + HIGHLIGHT);
+        let index = $highlight[0].rowIndex;
+
+        if ("ArrowDown" === event.key) {
+            index++;
+            if (index >= stats.length) {
+                index = 0;
+            }
+            this.selectCity(stats[index].name);
+        }
+        else if ("ArrowUp" === event.key) {
+            index--;
+            if (index < 0) {
+                index = stats.length - 1;
+            }
+            this.selectCity(stats[index].name);
+        }
+        else if ("Home" === event.key) {
+            $(CITYSCROLL).scrollTop(0);
+        }
+        else if ("End" === event.key) {
+            const $scroll = $(CITYSCROLL);
+            $scroll.scrollTop($scroll[0].scrollHeight);
+        }
+        else if ("PageDown" === event.key) {
+            this.page(true);
+        }
+        else if ("PageUp" === event.key) {
+            this.page(false);
+        }
+        else if ("Enter" === event.key) {
+            this.openWiki();
+        }
+    }
+
+    this.click = function(event) {
+        const $tar = $(event.target).parent();
+
+        if ($tar.hasClass(HIGHLIGHT)) {
+            this.openWiki();
+        }
+        else if ($tar.is("tr")) {
+            this.hover($tar);
+        }
+    }
+
+    this.page = function(down) {
+        const $scroll = $(CITYSCROLL);
+        const rowHeight = $("tr").outerHeight();
+        const rowsPerPage = Math.floor($scroll.height() / rowHeight);
+
+        if (down) {
+            $scroll.scrollTop($scroll.scrollTop() + rowHeight * rowsPerPage);
+        }
+        else {
+            $scroll.scrollTop($scroll.scrollTop() - rowHeight * rowsPerPage);
+        }
     }
 
     this.initLayer = function() {
@@ -106,7 +162,7 @@ function Storm() {
             var xPos = 20;
             var yPos = chartY - 15;
             ctx.font = "bold 14px Verdana";
-            ctx.fillStyle = 'black';
+            ctx.fillStyle = 'antiquewhite';
             ctx.fillText(months[month], xPos, yPos);
             ctx.font = "14px Verdana";
             yPos += 20;
@@ -192,51 +248,54 @@ function Storm() {
             }
         }
         return "";
-    },
+    }
 
-    this.initPicklist = function() {
-        var self = this;
-        var cities = $('#cities');
+    this.initCityList = function() {
+        const $list = $("#cityList");
+        const $scroll = $("<div id='cityScroll'>");
+        const $table = $("<table>");
+        const $tbody = $("<tbody>");
 
-        for (var i = 0; i < stats.length; i++) {
-            var name = stats[i].name;
-            var option = document.createElement('option');
-            option.setAttribute('value', name);
-            option.appendChild(document.createTextNode(name));
-            cities.append(option);
-        }
+        stats.forEach(stat => {
+            const $row = $("<tr>");
+            $row.append($("<td>").text(stat.name));
+            $tbody.append($row);
+        });
 
-        cities.change(function(event) {
-            self.setCity(event.target.value);
-            self.show();
+        $table.append($tbody);
+        $scroll.append($table);
+        $list.append($scroll);
+
+        $("tr").hover((event) => {
+            this.hover($(event.currentTarget));
         });
     }
 
-    this.setCity = function(name) {
-        if (name) {
-            for (var i = 0; i < stats.length; i++) {
-                if (stats[i].name.includes(name)) {
-                    currentCity = i;
-                    break;
-                }
-            }            
-        }
-    }
-
-    this.previous = function() {
-        currentCity--;
-        if (currentCity < 0) {
-            currentCity = stats.length - 1;
-        }
-        this.show();                    
-    }
-
-    this.next = function() {
-        currentCity++;
-        if (currentCity >= stats.length) {
-            currentCity = 0;
-        }
+    this.selectCity = function(name) {
+        const index = stats.findIndex(stat => stat.name.startsWith(name));
+        const $rows = $("tr");
+        const $row = $($rows[index]);
+        this.hover($row);
+        currentCity = index;
         this.show();
+    }
+
+    this.hover = function($tar) {
+        if (document.hasFocus()) {
+            const index = $tar[0].rowIndex;
+
+            $("." + HIGHLIGHT).removeClass(HIGHLIGHT);
+            $tar.addClass(HIGHLIGHT);
+            $("#focusHelper").focus(); // Redirect focus away from the scrollbar
+            $tar[0].scrollIntoView({ behavior: "smooth", block: "nearest" });
+
+            if (index === 0) {  // Make sure header shows when 1st row selected
+                $(CITYSCROLL).scrollTop(0);
+            }
+
+            currentCity = index;
+            this.show();
+        }
     }
 
     this.numberWithCommas = function(x) {
@@ -255,7 +314,7 @@ function Storm() {
         this.ctx.clearRect(0, 0, canvas.width, canvas.height);
         this.chart(city);
         this.ctx.font = "14px Verdana";
-        this.ctx.fillStyle = 'black';
+        this.ctx.fillStyle = 'antiquewhite';
         this.ctx.fillText(city.name + " (" + city.elev + "')" + pop, chartX + 5, chartY - 26);
         
         var txt = (currentCity + 1) + "/" + stats.length;
@@ -267,7 +326,7 @@ function Storm() {
         $('#info').text(info);
 
         var map = $('#mapUrl');
-        var wiki = $('#wikiUrl');
+        var wiki = $(WIKIURL);
         if (info) {
             map.css('display','block');
             map.attr('href', 'https://www.google.com/maps/place/' + city.name.replaceAll(' ','+'));
@@ -288,7 +347,7 @@ function Storm() {
             imgCity.attr('src', city.img);
         }
         else {
-            imgCity.attr('src', "1x1.png");
+            imgCity.attr('src', "");
         }
 
         var imgUrl = $('#imgUrl');
@@ -399,7 +458,7 @@ function Storm() {
             this.ctx.lineTo(x2, y2);
         }
         this.ctx.lineWidth = 1;
-        this.ctx.strokeStyle = 'black';
+        this.ctx.strokeStyle = 'antiquewhite';
         this.ctx.stroke();
 
         // Seasons
@@ -419,7 +478,7 @@ function Storm() {
         this.ctx.beginPath();
         this.ctx.arc(x, y, radius, 0, 2 * Math.PI, false);
         this.ctx.lineWidth = 1;
-        this.ctx.strokeStyle = 'black';
+        this.ctx.strokeStyle = 'antiquewhite';
         this.ctx.stroke();
 
         // Month labels
@@ -442,7 +501,7 @@ function Storm() {
         x = chartX + 5;
         y = chartY + chartHeight + 60;
         this.ctx.font = "12px Verdana";
-        this.ctx.fillStyle = 'black';
+        this.ctx.fillStyle = 'antiquewhite';
         this.drawTable("Freeze Days", city.freeze, x, y);
         y += 20;
         this.drawTable("90 Degree Days", city.hot, x, y);
@@ -458,7 +517,7 @@ function Storm() {
         this.ctx.fillStyle = color;
         this.ctx.fillRect(x, y, seasonWidth, seasonHeight);
         this.ctx.lineWidth = 1;
-        this.ctx.strokeStyle = 'black';
+        this.ctx.strokeStyle = 'antiquewhite';
         this.ctx.rect(x, y, seasonWidth, seasonHeight);
         this.ctx.stroke();
         this.ctx.fillStyle = color == winter ? 'white' : 'black';
@@ -501,13 +560,13 @@ function Storm() {
             this.ctx.fillStyle = color;
             this.ctx.fillRect(x, y - height, barWidth, height);
             this.ctx.lineWidth = 1;
-            this.ctx.strokeStyle = 'black';
+            this.ctx.strokeStyle = 'antiquewhite';
             this.ctx.rect(x, y - height, barWidth, height);
             this.ctx.stroke();
         }
 
         var xPos = centerX - this.ctx.measureText(name).width / 2;
-        this.ctx.fillStyle = 'black';
+        this.ctx.fillStyle = 'antiquewhite';
         this.ctx.fillText(name, xPos, y + 15);
         xPos = centerX - this.ctx.measureText(value).width / 2;
         this.ctx.fillText(value,  xPos, y - height - 8);

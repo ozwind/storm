@@ -127,7 +127,7 @@ var stats = [
     clear : 96,
     winter : [12,1, 3,15],
     summer : [5,10, 9,28],
-    img : 'https://photos.smugmug.com/photos/i-38N8kgQ/0/X4/i-38N8kgQ-X4.jpg',
+    img : 'https://njcrda.com/wp-content/uploads/2024/05/ac_skyline-beach-boardwalk-night_2021-1200x800-1.jpg',
     url : 'https://sbh19.smugmug.com/Servant-Season-3/Episode-301/Boardwalk/Atlantic-City-Online-Photos/i-38N8kgQ',
     info : 'Known for its casinos, boardwalk, and beaches. Atlantic City inspired the U.S. version of the board game Monopoly, which uses various Atlantic City street names and destinations in the game. In 1976, New Jersey voters legalized casino gambling in Atlantic City, and the first casino opened in 1978. Atlantic City had been the home of the Miss America pageant.'
   },
@@ -466,7 +466,7 @@ var stats = [
     clear : 309,
     winter : [12,15, 12,15],
     summer : [2,15, 12,15],
-    img : 'https://photos.smugmug.com/Egypt-and-Jordan-Share-2/i-R38JVXL/0/07df16bd/X2/Steve%20Carr%20Photo%2C%20All%20rights%20Reserved-3407-Edit-Edit-2-X2.jpg',
+    img : 'https://media.gadventures.com/media-server/dynamic/blogs/posts/G-Adventures/2024/10/Things_to_do_in_Cairo.webp',
     url : 'https://stevecarrphoto.smugmug.com/Egypt-and-Jordan-Share-2/i-R38JVXL',
     info : 'Cairo is associated with ancient Egypt, as the Giza pyramid complex and the ancient cities of Memphis and Heliopolis are located in its geographical area. The area around present-day Cairo had long been a focal point of Ancient Egypt due to its strategic location at the junction of the Nile Valley and the Nile Delta regions. Cairo\'s Tahrir Square was the focal point of the 2011 Egyptian Revolution against former president Hosni Mubarak.'
   },
@@ -503,7 +503,7 @@ var stats = [
     clear : 101,
     winter : [-1,1, -1,1],
     summer : [4,1, 11,1],
-    img : 'https://photos.smugmug.com/Charleston-2017/i-fWwRncm/0/e8a14dc9/L/IMG_3479-L.jpg',
+    img : 'https://photos.smugmug.com/Vacation/Charleston-2017/i-mVQdGLH/0/LgSDHH8tQsQbjs33qzzsPbFTcnvHkbqXDxV82gvGp/X4/IMG_3421-X4.jpg',
     url : 'https://chewi0.smugmug.com/Charleston-2017/i-fWwRncm',
     info : 'Charleston was founded in 1670 as Charles Town, honoring King Charles II. Charleston\'s significance in American history is tied to its role as a major slave trading port. Almost one-half of slaves imported to the United States arrived in Charleston. In 2018, the city formally apologized for its role in the American slave trade.'
   },
@@ -522,7 +522,7 @@ var stats = [
     clear : 59,
     winter : [11,15, 3,15],
     summer : [5,1, 10,5],
-    img : 'https://photos.smugmug.com/photos/i-vt4mz3J/0/X3/i-vt4mz3J-X3.jpg',
+    img : 'https://cdn.britannica.com/40/222240-050-844C4FED/West-Virginia-State-Capitol-Charleston-West-Virginia.jpg',
     info : 'The town of Charleston was incorporated by the Virginia House of Delegates in 1794 with the trustees being William Morris, Leonard Morris, and Daniel Boone. For several years, the West Virginia capital intermittently traveled between Wheeling and Charleston. In 1877 citizens voted for Charleston as the permanent location.'
   },
   { name : 'Chengdu, China',
@@ -786,7 +786,7 @@ var stats = [
     clear : 77,
     winter : [10,15, 5,1],
     summer : [6,15, 8,22],
-    img : 'https://photos.smugmug.com/photos/i-DTL67vr/0/X4/i-DTL67vr-X4.jpg',
+    img : 'https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/blogs/2147494665/images/33aef01-e27f-376-6eb-11ba4141b520_Duluth.jpg',
     url : 'https://www.northernimages.com/Portfolios/Seasons/Summer/August-Late-Summer/i-DTL67vr/A',
     info : 'Duluth is named after Daniel Greysolon, Sieur du Lhut, the area\'s first known European explorer. Situated on the north shore of Lake Superior at the westernmost point of the Great Lakes. The Port of Duluth is the world\'s farthest inland port accessible to oceangoing ships,[6] and by far the largest and busiest port on the Great Lakes. The city is also the starting point for vehicle trips touring the North Shore of Lake Superior toward Thunder Bay, Ontario, Canada.'
   },
@@ -862,7 +862,7 @@ var stats = [
     clear : 87,
     winter : [10,20, 4,10],
     summer : [5,25, 9,5],
-    img : 'https://photos.smugmug.com/photos/i-Cm8NGbK/0/X4/i-Cm8NGbK-X4.jpg',
+    img : 'https://cdn.britannica.com/08/219308-050-BB8C60C8/Fargo-North-Dakota.jpg',
     url : 'https://www.northernpathfinder.com/Featured-Photography/American-West/i-Cm8NGbK/A',
     info : 'The city with the highest population in North Dakota. Fargo sits on the western bank of the Red River of the North in a flat geographic region known as the Red River Valley. Fargo has bitterly cold winters and warm to hot, humid summers.'
   },
@@ -1014,7 +1014,7 @@ var stats = [
     clear : 81,
     winter : [10,25, 4,20],
     summer : [6,1, 9,5],
-    img : 'https://visitgreatfallsmontana.org/wp-content/uploads/2018/01/Warden-Overlook.jpg',
+    img : 'https://www.visitmt.com/binaries/content/gallery/MTOT/photos/cities-and-towns/greatfallshero.jpg',
     info : 'Great Falls is named for a series of five waterfalls located on the Missouri River north and east of the city. The Lewis and Clark Expedition of 1805–1806 was forced to portage around a 10-mile (16 km) stretch of the river in order to bypass the falls.'
   },
   { name : 'Green Bay, WI',
@@ -1220,7 +1220,7 @@ var stats = [
     clear : 109,
     winter : [11,1, 11,1],
     summer : [4,1, 11,1],
-    img : 'https://fairviewinn.com/wp-content/uploads/2017/09/Jackson-MS-skyline.jpg',
+    img : 'https://www.visittheusa.com/sites/default/files/styles/hero_l/public/images/hero_media_image/2017-02/HERO%202_Getty_Jackson_WEB72DPI.jpg',
     info : 'The capital and the most populous city in Mississippi. Founded in 1821 as the site for a new state capital, the city is named after President Andrew Jackson, who was General at the time.'
   },
   { name : 'Jacksonville, FL',
@@ -1389,7 +1389,7 @@ var stats = [
     clear : 216,
     winter : [1,1, 2,1],
     summer : [4,10, 11,1],
-    img : 'https://photos.smugmug.com/photos/i-n8zLj5j/0/X4/i-n8zLj5j-X4.jpg',
+    img : 'https://photos.smugmug.com/Vacation/Eclipse-2024/i-rmNdmrV/0/KdXTnCV4J7FrsnH336p45DP9nNDdgQBhfnvkTcrdV/X4/IMG_6310-X4.jpg',
     url : 'https://www.nicksimages.com/America/USA-Nevada/i-n8zLj5j',
     info : 'A tolerance for numerous forms of adult entertainment earned it the title of "Sin City". The iconic "Welcome to Las Vegas" sign was created in 1959 by Betty Willis. There is abundant sunshine throughout the year, with bright sunshine during 86% of all daylight hours.'
   },
@@ -1522,7 +1522,7 @@ var stats = [
     clear : 164,
     winter : [11,25, 3,1],
     summer : [4,15, 10,15],
-    img : 'https://visitlubbock.org/wp-content/uploads/2020/08/FFAT_Downtown-First-Friday-Art-Trail_.jpg',
+    img : 'https://lubbockeda.org/wp-content/uploads/Downtown-First-Friday-Art-Trail_High-Resolution-for-Print-CMYK-1-1024x682-1.jpg',
     info : "Lubbock's nickname, 'Hub City', derives from it being the economic, educational, and health-care hub of the multicounty region.  It was named after Thomas Saltus Lubbock, former Texas Ranger and brother of Francis Lubbock, governor of Texas during the Civil War."
   },
   { name : 'Madison, WI',
@@ -1802,7 +1802,7 @@ var stats = [
     clear : 107,
     winter : [11,25, 3,15],
     summer : [5,6, 10,20],
-    img : 'https://photos.smugmug.com/photos/i-CmNnsXR/0/X2/i-CmNnsXR-X2.jpg',
+    img : 'https://i.natgeofe.com/k/5b396b5e-59e7-43a6-9448-708125549aa1/new-york-statue-of-liberty.jpg',
     url : 'https://thomassuaujr.smugmug.com/New-York-City/i-CmNnsXR',
     info : 'Home to the headquarters of the United Nations. Contains the five boroughs Brooklyn, Queens, Manhattan, The Bronx, and Staten Island. New York City traces its origins to a trading post founded on the southern tip of Manhattan Island by Dutch colonists in approximately 1624.'
   },
@@ -1954,7 +1954,7 @@ var stats = [
     clear : 214,
     winter : [11,15, 11,15],
     summer : [3,15, 11,15],
-    img : 'https://photos.smugmug.com/photos/i-HZ3zH5g/2/X3/i-HZ3zH5g-X3.jpg',
+    img : 'https://www.visitarizona.com/imager/s3_us-west-1_amazonaws_com/aot-2020/images/Hero-Images/Phoenix-cityscape_b2b0b89039603b931027eb2900b66531.jpg',
     url : 'https://kevinruck.smugmug.com/Portfolio/2022-Shoots/2022/i-HZ3zH5g',
     info : 'On February 14, 1912, Phoenix became a state capital, as Arizona was admitted to the Union as the 48th state under President William Howard Taft. Like most of Arizona, Phoenix does not observe daylight saving time.'
   },
@@ -2011,7 +2011,7 @@ var stats = [
     clear : 69,
     winter : [1,1, 1,20],
     summer : [6,10, 9,25],
-    img : 'https://photos.smugmug.com/photos/i-xmKCPdv/5/X3/i-xmKCPdv-X3.jpg',
+    img : 'https://cdn.britannica.com/51/96651-050-C0CF1D82/Skyline-Portland-background-Ore-Mount-Hood.jpg',
     url : 'https://douglaskeder.smugmug.com/Northwest-Landscape/i-xmKCPdv',
     info : 'The Oregon settlement began to be populated in the 1840s, near the end of the Oregon Trail. Portland lies on top of a dormant volcanic field known as the Boring Lava Field. Portland\'s cityscape derives much of its character from the many bridges that span the Willamette River downtown.'
   },
@@ -2068,7 +2068,7 @@ var stats = [
     clear : 165,
     winter : [10,10, 4,15],
     summer : [6,15, 9,15],
-    img : 'https://photos.smugmug.com/photos/i-VsG77Hp/6/X4/i-VsG77Hp-X4.jpg',
+    img : 'https://cdn.sanity.io/images/b6qabne3/production/72b0475cd521179917ba4e8f43fe57bfbcb28a74-2000x953.jpg?rect=47,0,1906,953&w=1280&h=640&q=75&fit=clip&auto=format',
     url : 'https://jenlombardo.smugmug.com/Nevada/i-VsG77Hp/A',
     info : 'The city is named after Civil War Union Major General Jesse L. Reno, who was killed in action during the American Civil War. Reno took a leap forward when the state of Nevada legalized open gambling on March 19, 1931. Reno has become a new major technology center after recent investments from companies such as Amazon, Tesla, Panasonic, Microsoft, Apple, and Google.'
   },
@@ -2162,7 +2162,7 @@ var stats = [
     clear : 103,
     winter : [11,25, 3,1],
     summer : [5,1, 10,1],
-    img : 'https://photos.smugmug.com/photos/i-Wvbx5MN/0/X4/i-Wvbx5MN-X4.jpg',
+    img : 'https://dg19dz9e4mo.cloudfront.net/assets/files/13353/downtown.jpg',
     url : 'https://roanoke.smugmug.com/City-Photos/Purchased-City-Images/i-Wvbx5MN',
     info : 'First called Big Lick, after a large outcropping of salt that drew wildlife, the town was established in 1852, and became the town of Roanoke in 1884.'
   },
@@ -2483,7 +2483,7 @@ var stats = [
     clear : 0,
     winter : [1,1, 1,1],
     summer : [1,1, 12,31],
-    img : 'https://photos.smugmug.com/photos/i-FxMhjKW/0/X4/i-FxMhjKW-X4.jpg',
+    img : 'https://photos.smugmug.com/Vacation/Singapore-2024/i-XrtLsvh/0/KLTh6wwjZqJFWdPsqCMZWQSb9qLpGvL9sVK32gkJF/X4/IMG_7273-X4.jpg',
     url : 'https://nimaihari.smugmug.com/Cities/Singapore/i-FxMhjKW',
     info : 'Singapore is an island country and city-state in maritime Southeast Asia. It is located about one degree of latitude (85 miles) north of the equator, off the southern tip of the Malay Peninsula. During World War II, Singapore was occupied by Japan in 1942. Singapore became an independent sovereign country in 1965. A highly developed country, it has the second-highest GDP per capita in the world. Has consistently been ranked as one of the most expensive cities to live.'
   },
@@ -2708,7 +2708,7 @@ var stats = [
     clear : 198,
     winter : [11,15, 11,15],
     summer : [3,28, 11,15],
-    img : 'https://photos.smugmug.com/photos/i-m3vWZmH/1/X3/i-m3vWZmH-X3.jpg',
+    img : 'https://content.r9cdn.net/rimg/dimg/5c/8e/509f84f8-city-29704-166fa069103.jpg',
     url : 'https://prints.raycleveland.com/Galleries/Tucson/i-m3vWZmH/A',
     info : 'Tucson was founded as a military fort by the Spanish when Hugo O\'Conor authorized the construction of Presidio San Agustín del Tucsón in 1775. The US acquired portions of (modern day) Arizona that lay south of the Gila River by treaty from Mexico in the Gadsden Purchase on June 8, 1854. Under this treaty and purchase, Tucsón became a part of the United States of America. During the summer monsoon season clouds build up from the south in the early afternoon, followed by intense thunderstorms and rainfall, which can cause flash floods. The evening sky at this time of year is often pierced with dramatic lightning strikes.'
   },
@@ -2801,7 +2801,7 @@ var stats = [
     clear : 112,
     winter : [10,20, 4,10],
     summer : [5,20, 9,15],
-    img : 'https://www.travellens.co/content/images/2022/07/Yakima-wa.jpeg',
+    img : 'https://upload.wikimedia.org/wikipedia/commons/0/05/Yakima%2C_Washington_as_seen_from_Lookout_Point.jpg',
     info : 'Yakima is about 60 miles southeast of Mount Rainier in Washington, and about 100 miles east of Mount St. Helens. On May 18, 1980, the eruption of Mount St. Helens caused a large amount of volcanic ash to fall on the Yakima area. Visibility was reduced to near-zero conditions that afternoon, and the ash overloaded the city\'s wastewater treatment plant.'
   },
   { name : 'Zürich, Switzerland',
