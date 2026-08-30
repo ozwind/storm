@@ -70,8 +70,7 @@ var stats = [
     clear : 102,
     winter : [11,20, 3,15],
     summer : [5,3, 10,1],
-    img : 'https://photos.smugmug.com/photos/i-4BRGwSD/0/X4/i-4BRGwSD-X4.jpg',
-    url : 'https://peakdefinition.smugmug.com/Real-Estate-Samples/i-4BRGwSD',
+    img : 'https://upload.wikimedia.org/wikipedia/commons/5/5f/Asheville_at_dusk_%28cropped%29.jpg',
     info : 'European Americans began to settle in the area of Asheville in 1784, after the United States gained independence in the American Revolutionary War. Asheville is located in the Blue Ridge Mountains at the confluence of the Swannanoa River and the French Broad River.'
   },
   { name : 'Athens, Greece',
@@ -108,8 +107,7 @@ var stats = [
     clear : 108,
     winter : [1,4, 2,1],
     summer : [4,18, 10,20],
-    img : 'https://photos.smugmug.com/photos/i-8Bqbh65/0/X4/i-8Bqbh65-X4.jpg',
-    url : 'https://joshvbell.smugmug.com/Atlanta---8-12-21/i-8Bqbh65/A',
+    img : 'https://www.visittheusa.com/wp-content/uploads/2026/01/GA_Atlanta_downtown-skyline_shutterstock_10319672171920px.jpg',
     info : 'Atlanta is the capital and most populous city of Georgia. The region surrounding Atlanta was the location of several major army battles in 1864, culminating with the Battle of Atlanta and a four-month-long siege of the city by the Union Army under the command of General William Tecumseh Sherman. During the 1950s and 1960s, it became a major organizing center of the American Civil Rights Movement.'
   },
   { name : 'Atlantic City, NJ',
@@ -165,8 +163,8 @@ var stats = [
     clear : 115,
     winter : [11,15, 11,15],
     summer : [3,10, 11,15],
-    img : 'https://photos.smugmug.com/Texas-State-Capitol/i-mpFqTT4/0/0b9b9220/X2/AERIAL~2-X2.jpg',
-    url : 'https://dan-herron.smugmug.com/Texas-State-Capitol/i-mpFqTT4',
+    img : 'https://photos.smugmug.com/Vacation/Eclipse-2024/i-pWkLNf7/0/McFGDnPFmmCFr9zw2s8rPDwMcSL7XcgckMST9tSb8/X3/IMG_6013-X3.jpg',
+    url : 'https://chewi0.smugmug.com/Vacation/Eclipse-2024/i-pWkLNf7/A',
     info : 'Austin is the capital city of Texas. Austin is the southernmost state capital in the contiguous United States. Since the 1990s, Austin has become a center for technology and business. The population increased 84% between 2000 and 2020. In February 2021, Winter Storm Uri dropped prolific amounts of snow across Texas and Oklahoma, including Austin.'
   },
   { name : 'Baghdad, Iraq',
@@ -184,8 +182,7 @@ var stats = [
     clear : 268,
     winter : [1,1, 1,1],
     summer : [1,1, 12,31],
-    img : 'https://photos.smugmug.com/photos/i-QTL6Rcm/0/O/i-QTL6Rcm.jpg',
-    url : 'https://robertgleslie.smugmug.com/Middle-Eastern-and-African/Baghdad-Irag-NOT-MINE/i-QTL6Rcm',
+    img : 'https://www.travelthewholeworld.com/wp-content/uploads/2021/11/Iraq-Baghdad-Ramadan-Mosque.jpg',
     info : 'Baghdad is the capital of Iraq, located on the Tigris near the ruins of the ancient city of Babylon. During the 1970s, Baghdad experienced a period of prosperity and growth because of a sharp increase in the price of petroleum, Iraq\'s main export. The Iraq War took place from 2003 to 2011, with an Islamist insurgency lasting until 2013, followed by another war from 2013 to 2017.'
   },
   { name : 'Bakersfield, CA',
@@ -354,8 +351,7 @@ var stats = [
     clear : 124,
     winter : [10,10, 3,25],
     summer : [5,28, 9,5],
-    img : 'https://photos.smugmug.com/Boise/i-NcKR9cb/0/cc2b462e/L/059-1503-0003-L.jpg',
-    url : 'https://david-ryan-photography.smugmug.com/Boise/i-NcKR9cb',
+    img : 'https://visitidaho.org/wp-content/uploads/2019/03/DSCF9310.jpg',
     info : 'Downtown Boise\'s main attractions include the Idaho State Capitol. Boise\'s early growth was significantly driven by its role in supplying the nearby gold towns that sprung up in the 1860s northeast and then southwest of the town.'
   },
   { name : 'Boston, MA',
@@ -748,8 +744,7 @@ var stats = [
     clear : 103,
     winter : [11,5, 4,1],
     summer : [5,15, 9,25],
-    img : 'https://photos.smugmug.com/Landscapes/i-RB7h9JL/0/60c27687/X4/20210416-20210416-_DSC0001-X4.jpg',
-    url : 'https://druepowers.smugmug.com/Landscapes/i-RB7h9JL',
+    img : 'https://images.trvl-media.com/place/601690/7c67a49b-56a0-4396-a946-15d53266daab.jpg',
     info : 'Des Moines is the capital and the most populous city in Iowa. It is located on, and named after, the Des Moines River, which likely was adapted from the early French name, Rivière des Moines, meaning "River of the Monks". Des Moines is an important city in U.S. presidential politics; as the state\'s capital, it is the site of the first caucuses of the presidential primary cycle.'
   },
   { name : 'Detroit, MI',
@@ -881,8 +876,7 @@ var stats = [
     clear : 170,
     winter : [10,15, 5,14],
     summer : [6,15, 9,2],
-    img : 'https://photos.smugmug.com/photos/i-WFRHGBg/0/X4/i-WFRHGBg-X4.jpg',
-    url : 'https://g-lu.smugmug.com/Arizona/Lowell-Observatory-Flagstaff/i-WFRHGBg/A',
+    img : 'https://storage.ghost.io/c/81/de/81de7d80-9d8a-4012-9c0d-57f95df129a9/content/images/2022/03/Downtown-Flagstaff.jpg',
     info : 'Flagstaff lies near the southwestern edge of the Colorado Plateau and within the San Francisco volcanic field, along the western side of the largest contiguous ponderosa pine forest in the continental United States. In 1930, Pluto was discovered from Flagstaff. Pictured above is Flagstaff\'s Lowell Observatory.'
   },
   { name : 'Fort Smith, AR',
@@ -957,8 +951,7 @@ var stats = [
     clear : 183,
     winter : [11,14, 3,7],
     summer : [5,15, 10,16],
-    img : 'https://photos.smugmug.com/photos/i-TxHtphn/0/X4/i-TxHtphn-X4.jpg',
-    url : 'https://siske.smugmug.com/Travel/Switserland/Geneva-June-2009/i-TxHtphn/A',
+    img : 'https://cdn.sanity.io/images/nxpteyfv/goguides/589bc75d1b83a01b8588e7b6d12895b8ff254934-1600x1066.jpg',
     info : 'Geneva is a global city, a financial centre, and a worldwide centre for diplomacy due to the presence of numerous international organizations, including the headquarters of many agencies of the United Nations[13] and the Red Cross. Geneva hosts the highest number of international organizations in the world.'
   },
   { name : 'Grand Forks, ND',
@@ -1014,7 +1007,7 @@ var stats = [
     clear : 81,
     winter : [10,25, 4,20],
     summer : [6,1, 9,5],
-    img : 'https://www.visitmt.com/binaries/content/gallery/MTOT/photos/cities-and-towns/greatfallshero.jpg',
+    img : 'https://mapgetaways.com/wp-content/uploads/2025/05/Great-Falls-Dam-3.jpg',
     info : 'Great Falls is named for a series of five waterfalls located on the Missouri River north and east of the city. The Lewis and Clark Expedition of 1805–1806 was forced to portage around a 10-mile (16 km) stretch of the river in order to bypass the falls.'
   },
   { name : 'Green Bay, WI',
@@ -1220,7 +1213,7 @@ var stats = [
     clear : 109,
     winter : [11,1, 11,1],
     summer : [4,1, 11,1],
-    img : 'https://www.visittheusa.com/sites/default/files/styles/hero_l/public/images/hero_media_image/2017-02/HERO%202_Getty_Jackson_WEB72DPI.jpg',
+    img : 'https://www.thesouthernthing.com/wp-content/uploads/2017/12/Nighttime_CityScape-credit-Gil-Ford-Photography_preview.jpeg',
     info : 'The capital and the most populous city in Mississippi. Founded in 1821 as the site for a new state capital, the city is named after President Andrew Jackson, who was General at the time.'
   },
   { name : 'Jacksonville, FL',
@@ -1559,8 +1552,7 @@ var stats = [
     clear : 26,
     winter : [1,1, 1,1],
     summer : [1,1, 12,31],
-    img : 'https://photos.smugmug.com/photos/i-jWbWjKm/0/X4/i-jWbWjKm-X4.jpg',
-    url : 'https://www.chicagoexpat.com/Beyond-Chicago/The-Land-That-I-Left/Taguig-City/i-jWbWjKm/A',
+    img : 'https://cdn.audleytravel.com/1050/750/79/1015820-manila-skyline.webp',
     info : 'The Philippines capital Manila is located on the eastern shore of Manila Bay on the island of Luzon. On June 24, 1571, conquistador Miguel López de Legazpi arrived in Manila and declared it a territory of New Spain (Mexico). After the 1898 Battle of Manila, Spain ceded the city to the United States. During the Japanese occupation of the Philippines, American soldiers were ordered to withdraw from Manila and all military installations were removed by December 24, 1941.'
   },
   { name : 'Melbourne, Australia',
@@ -1671,8 +1663,7 @@ var stats = [
     clear : 100,
     winter : [10,10, 4,15],
     summer : [6,1, 9,15],
-    img : 'https://photos.smugmug.com/photos/i-n55wcmk/1/X4/i-n55wcmk-X4.jpg',
-    url : 'https://gallery.jimhphoto.com/Minneapolis-photography/i-n55wcmk',
+    img : 'https://upload.wikimedia.org/wikipedia/commons/0/05/2008-0712-MPLS-pan00-mp-edit.JPG',
     info : 'Nicknamed the "City of Lakes", Minneapolis is abundant in water, with thirteen lakes, wetlands, the Mississippi River, creeks, and waterfalls. The French explored the region in 1680.'
   },
   { name : 'Mobile, AL',
@@ -1709,7 +1700,7 @@ var stats = [
     clear : 62,
     winter : [1,1, 1,1],
     summer : [1,1, 12,31],
-    img : 'https://banadirwiki.com/wp-content/uploads/2020/11/MOGADISHU-iconic.jpg',
+    img : 'https://imgix.bustle.com/mic/4daaca45562eadbf8d1638e9574641a53e742af13110b0e727f58c41bf8cc79c.jpg',
     info : 'The capital and most populous city of Somalia. Mogadishu is situated on the Indian Ocean coast of the Horn of Africa of Northeast Africa.'
   },
   { name : 'Montgomery, AL',
@@ -1727,8 +1718,7 @@ var stats = [
     clear : 107,
     winter : [11,1, 11,1],
     summer : [4,1, 11,1],
-    img : 'https://photos.smugmug.com/photos/i-3jdXfJ8/0/X4/i-3jdXfJ8-X4.jpg',
-    url : 'https://caymaneby.smugmug.com/The-Wonder-Years-Season-1/Montgomery/Federal-Buildings/Alabama-State-Capital---South-fa/i-3jdXfJ8/A',
+    img : 'https://www.visittheusa.com/wp-content/uploads/2026/01/AL_Montgomery_Experience-Montgomery_Riverfront-Park1920px.jpg',
     info : 'Montgomery is the capital of Alabama, named after the Irish soldier Richard Montgomery. Martin Luther King Jr. returned to Montgomery in 1965. Local civil rights leaders in Selma had been protesting Jim Crow laws and practices that raised barriers to blacks registering to vote.'
   },
   { name : 'Moscow, Russia',
@@ -1954,8 +1944,7 @@ var stats = [
     clear : 214,
     winter : [11,15, 11,15],
     summer : [3,15, 11,15],
-    img : 'https://www.visitarizona.com/imager/s3_us-west-1_amazonaws_com/aot-2020/images/Hero-Images/Phoenix-cityscape_b2b0b89039603b931027eb2900b66531.jpg',
-    url : 'https://kevinruck.smugmug.com/Portfolio/2022-Shoots/2022/i-HZ3zH5g',
+    img : 'https://www.worldatlas.com/upload/40/9e/85/shutterstock-1681427986.jpg',
     info : 'On February 14, 1912, Phoenix became a state capital, as Arizona was admitted to the Union as the 48th state under President William Howard Taft. Like most of Arizona, Phoenix does not observe daylight saving time.'
   },
   { name : 'Pittsburgh, PA',
@@ -1992,8 +1981,7 @@ var stats = [
     clear : 107,
     winter : [11,1, 4,10],
     summer : [6,15, 9,15],
-    img : 'https://photos.smugmug.com/photos/i-cbthTkR/0/X3/i-cbthTkR-X3.jpg',
-    url : 'https://www.christopherkensington.com/PhotoBackup/Styles/Cityscape/i-cbthTkR',
+    img : 'https://i.natgeofe.com/n/827daaa2-2828-4153-9e85-1048ced31144/downtown-cityscape-portland-maine.jpg',
     info : 'The Port of Portland is the second-largest tonnage seaport in New England. The word Portland is derived from the Old English word Portlanda, which means "land surrounding a harbor".'
   },
   { name : 'Portland, OR',
